@@ -1,8 +1,8 @@
 library(tidyverse)
 library(showtext)
+
 font_add_google("Puritan", "Puritan")
 showtext_auto()
-Total_Population <- read_csv("Total_Population.csv")
 
 Censuses <- c("1790", "1800", "1810", "1820", "1830", "1840", "1850", "1860", "1870", "1880", "1890")
 Population <- c(3929214,5308483,7239881,9633822,12866020,17069453,23191876,31443321,38558371,50155783,62622250)
@@ -45,15 +45,14 @@ Ext_Pop_Graph <- Ext_Pop_Density %>%
 
 
 #Final Graph
-
-png(here::here("Continued Plot Work", "Urban and Total Population at Each Census: 1790 to 1890 - Henry Gannett", "4-Final-UaTP.png"),width=1000,height=400)
+png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "4-Final-UaTP.png"),width=1000,height=400)
 
 ggplot(Urban_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
-  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census: 1790 to 1890") +
+  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
   scale_y_discrete(limits = rev) +
   # Add box to go around the census years
   coord_cartesian(xlim = c(.4, 62)) +
@@ -75,14 +74,14 @@ dev.off()
 
 #Concealed Graph
 
-png(here::here("Continued Plot Work", "Urban and Total Population at Each Census: 1790 to 1890 - Henry Gannett", "1-Concealed-UaTP.png"),width=1000,height=400)
+png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "1-Concealed-UaTP.png"),width=1000,height=400)
 
 ggplot(Urban_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
-  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census: 1790 to 1890") +
+  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
   scale_y_discrete(limits = rev) +
   # Add box to go around the census years
   coord_cartesian(xlim = c(.4, 62)) +
@@ -104,14 +103,14 @@ dev.off()
 
 #Reveal Pop
 
-png(here::here("Continued Plot Work", "Urban and Total Population at Each Census: 1790 to 1890 - Henry Gannett", "2-RevealPop-UaTP.png"),width=1000,height=400)
+png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "2-RevealPop-UaTP.png"),width=1000,height=400)
 
 ggplot(Urban_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
-  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census: 1790 to 1890") +
+  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
   scale_y_discrete(limits = rev) +
   # Add box to go around the census years
   coord_cartesian(xlim = c(.4, 62)) +
@@ -133,14 +132,14 @@ dev.off()
 
 #Reveal Year
 
-png(here::here("Continued Plot Work", "Urban and Total Population at Each Census: 1790 to 1890 - Henry Gannett", "3-RevealYear-UaTP.png"),width=1000,height=400)
+png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "3-RevealYear-UaTP.png"),width=1000,height=400)
 
 ggplot(Urban_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
-  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census: 1790 to 1890") +
+  labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
   scale_y_discrete(limits = rev) +
   # Add box to go around the census years
   coord_cartesian(xlim = c(.4, 62)) +
