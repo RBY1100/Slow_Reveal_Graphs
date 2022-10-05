@@ -21,15 +21,10 @@ dev.off()
 
 #Uploading River Images to put into map
 neim <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Neim.png"))
-plot(as.raster(neim))
 mosk <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Mosk.PNG"))
-plot(as.raster(mosk))
 dorg <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Dorg.PNG"))
-plot(as.raster(dorg))
 orsh <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Orsh.PNG"))
-plot(as.raster(orsh))
 bere <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Bere.PNG"))
-plot(as.raster(bere))
 
 
 #Drawing the map
