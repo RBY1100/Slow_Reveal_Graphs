@@ -33,7 +33,9 @@ gannett <- function() {
         panel.grid.major.y = element_blank(),
         # Make the graph wider instead of taller
         aspect.ratio = .3,
-        panel.border = element_rect(fill = NA, size = 1.5)
+        panel.border = element_rect(fill = NA, size = 1.5),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5")
   )
 }
 
@@ -49,7 +51,7 @@ png(here::here("Continued Plot Work", "Urban and Total Population at Each Census
 
 ggplot(Urban_Pop_Graph) +
   # Total population
-  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
+  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "#f1d9b5", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
   labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
@@ -67,7 +69,9 @@ ggplot(Urban_Pop_Graph) +
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(size = .4),
-        panel.border = element_rect(size = .9))
+        panel.border = element_rect(size = .9),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5"))
 
 dev.off()
 
@@ -78,7 +82,7 @@ png(here::here("Continued Plot Work", "Urban and Total Population at Each Census
 
 ggplot(Urban_Pop_Graph) +
   # Total population
-  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
+  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "#f1d9b5", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
   labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
@@ -87,16 +91,18 @@ ggplot(Urban_Pop_Graph) +
   coord_cartesian(xlim = c(.4, 62)) +
   scale_x_continuous(breaks = seq(0,60, by = 10), position = "top", limits = c(0,70)) +
   theme_linedraw() +
-  theme(axis.title = element_text(size = 6, family = "serif",color="white"),
-        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="white"),
-        axis.title.y = element_text(hjust = .5, color="white"),
-        axis.text.y = element_text(size = 7, margin = margin(l = 20, r = -29), color="white"),
-        axis.text.x = element_text(size = 6, color="white"),
+  theme(axis.title = element_text(size = 6, family = "serif",color="#f1d9b5"),
+        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="#f1d9b5"),
+        axis.title.y = element_text(hjust = .5, color="#f1d9b5"),
+        axis.text.y = element_text(size = 7, margin = margin(l = 20, r = -29), color="#f1d9b5"),
+        axis.text.x = element_text(size = 6, color="#f1d9b5"),
         axis.ticks = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(size = .4),
-        panel.border = element_rect(size = .9))
+        panel.border = element_rect(size = .9),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5"))
 
 dev.off()
 
@@ -107,7 +113,7 @@ png(here::here("Continued Plot Work", "Urban and Total Population at Each Census
 
 ggplot(Urban_Pop_Graph) +
   # Total population
-  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
+  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "#f1d9b5", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
   labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
@@ -117,15 +123,17 @@ ggplot(Urban_Pop_Graph) +
   scale_x_continuous(breaks = seq(0,60, by = 10), position = "top", limits = c(0,70)) +
   theme_linedraw() +
   theme(axis.title = element_text(size = 6, family = "serif",color="black"),
-        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="white"),
-        axis.title.y = element_text(hjust = .5, color="white"),
-        axis.text.y = element_text(size = 7, margin = margin(l = 20, r = -29), color="white"),
+        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="#f1d9b5"),
+        axis.title.y = element_text(hjust = .5, color="#f1d9b5"),
+        axis.text.y = element_text(size = 7, margin = margin(l = 20, r = -29), color="#f1d9b5"),
         axis.text.x = element_text(size = 6, color="black"),
         axis.ticks = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(size = .4),
-        panel.border = element_rect(size = .9))
+        panel.border = element_rect(size = .9),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5"))
 
 dev.off()
 
@@ -136,7 +144,7 @@ png(here::here("Continued Plot Work", "Urban and Total Population at Each Census
 
 ggplot(Urban_Pop_Graph) +
   # Total population
-  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
+  geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "#f1d9b5", alpha = 0) +
   # Urban Population overlaid on total population
   geom_col(aes(y = Censuses, x = Urban_Pop), width = .6, fill = "black") +
   labs(x = "[Millions of Inhabitants]", y = "", title = "Urban and Total Population at Each Census from 1790 to 1890") +
@@ -146,14 +154,16 @@ ggplot(Urban_Pop_Graph) +
   scale_x_continuous(breaks = seq(0,60, by = 10), position = "top", limits = c(0,70)) +
   theme_linedraw() +
   theme(axis.title = element_text(size = 6, family = "serif",color="black"),
-        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="white"),
-        axis.title.y = element_text(hjust = .5, color="white"),
+        plot.title = element_text(size = 10, family = "Puritan", hjust = .5, vjust = -1, color="#f1d9b5"),
+        axis.title.y = element_text(hjust = .5, color="#f1d9b5"),
         axis.text.y = element_text(size = 7, margin = margin(l = 20, r = -29), color="black"),
         axis.text.x = element_text(size = 6, color="black"),
         axis.ticks = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(size = .4),
-        panel.border = element_rect(size = .9))
+        panel.border = element_rect(size = .9),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5"))
 
 dev.off()

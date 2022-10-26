@@ -41,7 +41,9 @@ ggplot(Mod_Total_Population) +
         panel.grid.minor.y = element_blank(),
         panel.grid.major.x = element_blank(),
         aspect.ratio = 1.2,
-        panel.border = element_rect(fill = NA, size = 1.05)
+        panel.border = element_rect(fill = NA, size = 1.05),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5")
   )
 
 dev.off()
@@ -72,7 +74,10 @@ ggplot(Mod_Total_Population) +
         panel.grid.minor.y = element_blank(),
         panel.grid.major.x = element_blank(),
         aspect.ratio = 1.2,
-        panel.border = element_rect(fill = NA, size = 1.05)
+        panel.border = element_rect(fill = NA, size = 1.05),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5")
+        
   ) +
   hide(c("xtext", "ytext", "title"))
 
@@ -104,7 +109,10 @@ ggplot(Mod_Total_Population) +
         panel.grid.minor.y = element_blank(),
         panel.grid.major.x = element_blank(),
         aspect.ratio = 1.2,
-        panel.border = element_rect(fill = NA, size = 1.05)
+        panel.border = element_rect(fill = NA, size = 1.05),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5")
+        
   ) +
   hide(c("xtext", "title"))
 
@@ -136,7 +144,10 @@ ggplot(Mod_Total_Population) +
         panel.grid.minor.y = element_blank(),
         panel.grid.major.x = element_blank(),
         aspect.ratio = 1.2,
-        panel.border = element_rect(fill = NA, size = 1.05)
+        panel.border = element_rect(fill = NA, size = 1.05),
+        panel.background = element_rect(fill = "#f1d9b5"),
+        plot.background = element_rect(fill = "#f1d9b5")
+        
   ) +
   hide(c("title"))
 
