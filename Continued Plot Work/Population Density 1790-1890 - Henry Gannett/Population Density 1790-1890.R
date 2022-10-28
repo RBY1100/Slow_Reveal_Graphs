@@ -18,7 +18,7 @@ Mod_Total_Population <- Population_Density %>%
 
 #Final Graph
 
-png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "4-Final-PopulationDensity.png"), width=500,height=550)
+png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "4-Final-PopulationDensity.png"), width=420,height=550)
     
 ggplot(Mod_Total_Population) +
   annotate("segment", x = seq(0,20,2), xend = seq(0,20,2), y = 0, yend = 11.38) +
@@ -41,7 +41,6 @@ ggplot(Mod_Total_Population) +
         panel.grid.minor.y = element_blank(),
         panel.grid.major.x = element_blank(),
         aspect.ratio = 1.2,
-        panel.border = element_rect(fill = NA, size = 1.05),
         panel.background = element_rect(fill = "#f1d9b5"),
         plot.background = element_rect(fill = "#f1d9b5")
   )
@@ -51,7 +50,7 @@ dev.off()
 
 #Concealed Graph
 
-png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "1-Concealed-PopulationDensity.png"), width=500,height=550)
+png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "1-Concealed-PopulationDensity.png"), width=420,height=550)
 
 ggplot(Mod_Total_Population) +
   annotate("segment", x = seq(0,20,2), xend = seq(0,20,2), y = 0, yend = 11.38) +
@@ -79,14 +78,14 @@ ggplot(Mod_Total_Population) +
         plot.background = element_rect(fill = "#f1d9b5")
         
   ) +
-  hide(c("xtext", "ytext", "title"))
+  hide(c("xtext", "ytext", "title"), colour = "#f1d9b5")
 
 dev.off()
 
 
 #Reveal Year
 
-png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "2-YearReveal-PopulationDensity.png"), width=500,height=550)
+png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "2-YearReveal-PopulationDensity.png"), width=420,height=550)
 
 ggplot(Mod_Total_Population) +
   annotate("segment", x = seq(0,20,2), xend = seq(0,20,2), y = 0, yend = 11.38) +
@@ -114,14 +113,14 @@ ggplot(Mod_Total_Population) +
         plot.background = element_rect(fill = "#f1d9b5")
         
   ) +
-  hide(c("xtext", "title"))
+  hide(c("xtext", "title"), colour = "#f1d9b5")
 
 dev.off()
 
 
 #Reveal Density
 
-png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "3-DensityReveal-PopulationDensity.png"), width=500,height=550)
+png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "3-DensityReveal-PopulationDensity.png"), width=420,height=550)
 
 ggplot(Mod_Total_Population) +
   annotate("segment", x = seq(0,20,2), xend = seq(0,20,2), y = 0, yend = 11.38) +
@@ -149,6 +148,6 @@ ggplot(Mod_Total_Population) +
         plot.background = element_rect(fill = "#f1d9b5")
         
   ) +
-  hide(c("title"))
+  hide(c("title"), colour = "#f1d9b5")
 
 dev.off()
