@@ -22,8 +22,14 @@ blue 3:554eb5
 blue 4:6462bf
 bleeched blue:7d8bd1
 
-green:
-green 2:
-green 3:
-green 4:
-bleeched green:
+green:289426
+green 2:39ad36
+green 3:4eb55a
+green 4:62bf75
+bleeched green:7dd180
+
+white:787878
+white 2:999999
+white 3:b5b5b5
+white 4:d4d2d2
+bleeched white:ffffff
