@@ -68,10 +68,11 @@ plot3 <- ggplot(third, aes(x = percent, y = fct_rev(age)), fill = NA) +
   geom_col(color = "black", fill= "black", width = .5) +
   labs(tag = "(In thousands.)") +
   scale_x_continuous(position = "top", limits = c(0,50), breaks=seq(0,50,10)) +
-  theme(axis.text.x = element_text(family = "Main", size = 6, color= "black"),
+  theme(axis.text.x = element_text(family = "Main", size = 6, color= "white"),
         axis.title.x = element_blank(), 
         panel.grid.major.x = element_line(color="white", size=.25),
         axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), 
         axis.title.y = element_blank(),
         axis.text.y = element_text(family = "Main", hjust = 0, size = 8, color = "black"),
         panel.grid.major.y = element_blank(),
@@ -88,10 +89,11 @@ plot4 <- ggplot(fourth, aes(x = percent, y = fct_rev(age)), fill = NA) +
   geom_col(color = "black", fill= "black", width = .5) +
   labs(tag = "(In thousands.)") +
   scale_x_continuous(position = "top", limits = c(0,50), breaks=seq(0,50,10)) +
-  theme(axis.text.x = element_text(family = "Main", size = 6, color= "black"),
+  theme(axis.text.x = element_text(family = "Main", size = 6, color= "white"),
         axis.title.x = element_blank(), 
         panel.grid.major.x = element_line(color="white", size=.25),
         axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), 
         axis.title.y = element_blank(),
         axis.text.y = element_text(family = "Main", hjust = 0, size = 8, color = "black"),
         panel.grid.major.y = element_blank(),
@@ -108,10 +110,11 @@ plot5 <- ggplot(fifth, aes(x = percent, y = fct_rev(age)), fill = NA) +
   geom_col(color = "black", fill= "black", width = .5) +
   labs(tag = "(In thousands.)") +
   scale_x_continuous(position = "top", limits = c(0,50), breaks=seq(0,50,10)) +
-  theme(axis.text.x = element_text(family = "Main", size = 6, color= "black"),
+  theme(axis.text.x = element_text(family = "Main", size = 6, color= "white"),
         axis.title.x = element_blank(), 
         panel.grid.major.x = element_line(color="white", size=.25),
         axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), 
         axis.title.y = element_blank(),
         axis.text.y = element_text(family = "Main", hjust = 0, size = 8, color = "black"),
         panel.grid.major.y = element_blank(),
@@ -128,10 +131,11 @@ plot6 <- ggplot(sixth, aes(x = percent, y = fct_rev(age)), fill = NA) +
   geom_col(color = "black", fill= "black", width = .5) +
   labs(tag = "(In thousands.)") +
   scale_x_continuous(position = "top", limits = c(0,50), breaks=seq(0,50,10)) +
-  theme(axis.text.x = element_text(family = "Main", size = 6, color= "black"),
+  theme(axis.text.x = element_text(family = "Main", size = 6, color= "white"),
         axis.title.x = element_blank(), 
         panel.grid.major.x = element_line(color="white", size=.25),
         axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), 
         axis.title.y = element_blank(),
         axis.text.y = element_text(family = "Main", hjust = 0, size = 8, color = "black"),
         panel.grid.major.y = element_blank(),
@@ -278,7 +282,78 @@ text(720, 150, "Mortality of Southern Cities.", family = "Main", cex = 2.25, col
 text(890, 175, "Rate per 10,000", family = "Main", cex = .5, col = "#383227")
 text(720, 170, "RATE PER 10,000", family = "Main", cex = 1, col = "#383227")
 
-text(500, 475, "Proportionate Consumption Mortality ~ MALES.", family = "Main", cex = 2.25, col = "#383227")
+text(500, 465, "Proportionate Consumption Mortality ~ MALES.", family = "Main", cex = 2.25, col = "#383227")
+text(130, 500, "Ages at Death. WHITES.", family = "Main", cex = 1.5, col = "#383227")
+text(375, 500, "Ages at Death. NEGROES.", family = "Main", cex = 1.5, col = "#383227")
+text(610, 500, "Ages at Death. INDIANS.", family = "Main", cex = 1.5, col = "#383227")
+text(850, 500, "Ages at Death. CHINESE.", family = "Main", cex = 1.5, col = "#383227")
+
+
+segments(x0=70,y0=523, x1=70, y1=603, lwd = 1, lty = "solid")
+text(105, 517, "10%", family = "Main", cex = .5, col = "#383227")
+segments(x0=105,y0=523, x1=105, y1=574, lwd = 1, lty = "solid")
+text(140, 517, "20%", family = "Main", cex = .5, col = "#383227")
+segments(x0=140,y0=523, x1=140, y1=559, lwd = 1, lty = "solid")
+
+text(77, 527, "21.7", family = "Main", cex = .55, col = "white")
+text(77, 541, "28.8", family = "Main", cex = .55, col = "white")
+text(77, 555, "21.9", family = "Main", cex = .55, col = "white")
+text(77, 570, "14.5", family = "Main", cex = .55, col = "white")
+text(77, 585, "9.0", family = "Main", cex = .55, col = "white")
+text(82, 600, "3.6", family = "Main", cex = .55, col = "black")
+
+
+segments(x0=310,y0=523, x1=310, y1=603, lwd = 1, lty = "solid")
+text(345, 517, "10%", family = "Main", cex = .5, col = "#383227")
+segments(x0=345,y0=523, x1=345, y1=588, lwd = 1, lty = "solid")
+text(380, 517, "20%", family = "Main", cex = .5, col = "#383227")
+segments(x0=380,y0=523, x1=380, y1=559, lwd = 1, lty = "solid")
+
+text(317, 527, "27.8", family = "Main", cex = .55, col = "white")
+text(317, 541, "28.7", family = "Main", cex = .55, col = "white")
+text(317, 555, "24.4", family = "Main", cex = .55, col = "white")
+text(317, 570, "17.6", family = "Main", cex = .55, col = "white")
+text(317, 585, "11.8", family = "Main", cex = .55, col = "white")
+text(317, 600, "5.3", family = "Main", cex = .55, col = "white")
+
+segments(x0=549,y0=523, x1=549, y1=603, lwd = 1, lty = "solid")
+text(583, 517, "10%", family = "Main", cex = .5, col = "#383227")
+segments(x0=583,y0=523, x1=583, y1=603, lwd = 1, lty = "solid")
+text(617, 517, "20%", family = "Main", cex = .5, col = "#383227")
+segments(x0=617,y0=523, x1=617, y1=588, lwd = 1, lty = "solid")
+text(651, 517, "30%", family = "Main", cex = .5, col = "#383227")
+segments(x0=651,y0=523, x1=651, y1=544, lwd = 1, lty = "solid")
+text(685, 517, "40%", family = "Main", cex = .5, col = "#383227")
+segments(x0=685,y0=523, x1=685, y1=544, lwd = 1, lty = "solid")
+text(719, 517, "50%", family = "Main", cex = .5, col = "#383227")
+
+text(556, 527, "50.0", family = "Main", cex = .55, col = "white")
+text(556, 541, "40.6", family = "Main", cex = .55, col = "white")
+text(556, 555, "25.3", family = "Main", cex = .55, col = "white")
+text(556, 570, "21.7", family = "Main", cex = .55, col = "white")
+text(556, 585, "20.4", family = "Main", cex = .55, col = "white")
+text(556, 600, "11.9", family = "Main", cex = .55, col = "white")
+
+segments(x0=788,y0=523, x1=788, y1=603, lwd = 1, lty = "solid")
+text(822, 517, "10%", family = "Main", cex = .5, col = "#383227")
+segments(x0=822,y0=523, x1=822, y1=603, lwd = 1, lty = "solid")
+text(856, 517, "20%", family = "Main", cex = .5, col = "#383227")
+segments(x0=856,y0=523, x1=856, y1=603, lwd = 1, lty = "solid")
+text(890, 517, "30%", family = "Main", cex = .5, col = "#383227")
+segments(x0=890,y0=523, x1=890, y1=574, lwd = 1, lty = "solid")
+text(924, 517, "40%", family = "Main", cex = .5, col = "#383227")
+segments(x0=924,y0=523, x1=924, y1=559, lwd = 1, lty = "solid")
+
+text(795, 527, "37.2", family = "Main", cex = .55, col = "white")
+text(795, 541, "44.7", family = "Main", cex = .55, col = "white")
+text(795, 555, "43.5", family = "Main", cex = .55, col = "white")
+text(795, 570, "33.2", family = "Main", cex = .55, col = "white")
+text(795, 585, "23.7", family = "Main", cex = .55, col = "white")
+text(795, 600, "22.1", family = "Main", cex = .55, col = "white")
+
+text(500, 640, "NOTE: The proportionate consumption mortality is determined by calculating the percentage of deaths from consumption in the mortality", family = "Main", cex = 1, col = "#383227")
+text(500, 660, "from all causes at specified periods of life. For illustration: at ages 15-24, out of every 100 deaths from all causes, among white", family = "Main", cex = 1, col = "black")
+text(500, 680, "males 21.7 are from consumption, among negro males 27.8, among male Indians 50.0, and among Chinese (in the US) 37.2", family = "Main", cex = 1, col = "black")
 
 dev.off()
 
