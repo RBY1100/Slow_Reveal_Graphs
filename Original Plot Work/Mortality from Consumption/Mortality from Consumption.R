@@ -351,9 +351,13 @@ text(795, 570, "33.2", family = "Main", cex = .55, col = "white")
 text(795, 585, "23.7", family = "Main", cex = .55, col = "white")
 text(795, 600, "22.1", family = "Main", cex = .55, col = "white")
 
-text(500, 640, "NOTE: The proportionate consumption mortality is determined by calculating the percentage of deaths from consumption in the mortality", family = "Main", cex = 1, col = "#383227")
-text(500, 660, "from all causes at specified periods of life. For illustration: at ages 15-24, out of every 100 deaths from all causes, among white", family = "Main", cex = 1, col = "black")
-text(500, 680, "males 21.7 are from consumption, among negro males 27.8, among male Indians 50.0, and among Chinese (in the US) 37.2", family = "Main", cex = 1, col = "black")
+text(500, 630, "NOTE: The proportionate consumption mortality is determined by calculating the percentage of deaths from consumption in the mortality", family = "Main", cex = 1, col = "#383227")
+text(500, 645, "from all causes at specified periods of life. For illustration: at ages 15-24, out of every 100 deaths from all causes, among white", family = "Main", cex = 1, col = "black")
+text(500, 660, "males 21.7 are from consumption, among negro males 27.8, among male Indians 50.0, and among Chinese (in the US) 37.2", family = "Main", cex = 1, col = "black")
+
+text(280, 355, "Total Population", family = "Main", cex = 1, srt = -13, col = "black")
+text(695, 210, "Colored Population", family = "Main", cex = 1, srt = -15, col = "black")
+text(725, 370, "White Population", family = "Main", cex = 1, srt = -10, col = "black")
 
 dev.off()
 
