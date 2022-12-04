@@ -898,6 +898,323 @@ segments(x0=977, y0=140, x1=930, y1=150, lwd = 1, lty = "solid")
 segments(x0=955, y0=250, x1=930, y1=150, lwd = 1, lty = "solid")
 segments(x0=955, y0=250, x1=977, y1=245, lwd = 1, lty = "solid")
 
+
+segments(x0=195, y0=190, x1=215, y1=300, lwd = 1, lty = "dotdash")
+segments(x0=260, y0=415, x1=215, y1=300, lwd = 1, lty = "dotdash")
+segments(x0=260, y0=415, x1=305, y1=480, lwd = 1, lty = "dotdash")
+segments(x0=120, y0=695, x1=305, y1=480, lwd = 1, lty = "dotdash")
+segments(x0=120, y0=695, x1=50, y1=755, lwd = 1, lty = "dotdash")
+segments(x0=195, y0=960, x1=50, y1=755, lwd = 1, lty = "dotdash")
+segments(x0=195, y0=960, x1=370, y1=885, lwd = 1, lty = "dotdash")
+segments(x0=385, y0=895, x1=370, y1=885, lwd = 1, lty = "dotdash")
+segments(x0=385, y0=895, x1=580, y1=845, lwd = 1, lty = "dotdash")
+segments(x0=700, y0=865, x1=580, y1=845, lwd = 1, lty = "dotdash")
+segments(x0=700, y0=865, x1=865, y1=910, lwd = 1, lty = "dotdash")
+segments(x0=950, y0=887, x1=865, y1=910, lwd = 1, lty = "dotdash")
+segments(x0=950, y0=887, x1=885, y1=705, lwd = 1, lty = "dotdash")
+segments(x0=977, y0=685, x1=885, y1=705, lwd = 1, lty = "dotdash")
+segments(x0=977, y0=625, x1=875, y1=250, lwd = 1, lty = "dotdash")
+segments(x0=800, y0=70, x1=875, y1=250, lwd = 1, lty = "dotdash")
+segments(x0=800, y0=70, x1=700, y1=80, lwd = 1, lty = "dotdash")
+segments(x0=450, y0=125, x1=700, y1=80, lwd = 1, lty = "dotdash")
+segments(x0=450, y0=125, x1=195, y1=190, lwd = 1, lty = "dotdash")
+
+polygon(c(392, 392, 385, 385), c(209, 216, 217, 210), border = "black", col = "black")
+
+polygon(c(562, 562, 555, 555), c(292, 299, 300, 293), border = "black", col = "black")
+polygon(c(582, 582, 575, 575), c(288, 295, 297, 290), border = "black", col = "black")
+polygon(c(631, 629, 626, 628), c(275, 268, 268, 275), border = "black", col = "black")
+polygon(c(621, 619, 616, 618), c(250, 243, 243, 250), border = "black", col = "black")
+polygon(c(637, 635, 632, 634), c(295, 288, 288, 295), border = "black", col = "black")
+polygon(c(629, 627, 624, 626), c(310, 303, 303, 310), border = "black", col = "black")
+polygon(c(641, 639, 636, 638), c(350, 343, 343, 350), border = "black", col = "black")
+polygon(c(645, 643, 640, 642), c(365, 358, 358, 365), border = "black", col = "black")
+polygon(c(649, 647, 644, 646), c(380, 373, 373, 380), border = "black", col = "black")
+
+polygon(c(610, 610, 620, 620), c(417, 410, 408, 415), border = "black", col = "black")
+polygon(c(630, 630, 650, 650), c(412, 409, 403, 406), border = "black", col = "black")
+polygon(c(637, 637, 643, 643), c(410, 394, 393, 406), border = "black", col = "black")
+
+polygon(c(585, 585, 593, 593), c(369, 365, 363, 365), border = "black", col = "black")
+
+polygon(c(588, 585, 588, 591), c(395, 380, 380, 395), border = "black", col = "black")
+polygon(c(594, 596, 600, 597), c(410, 417, 417, 410), border = "black", col = "black")
+
+polygon(c(555, 555, 562, 562), c(426, 430, 427, 423), border = "black", col = "black")
+
+polygon(c(550, 548, 555, 557), c(420, 413, 413, 420), border = "black", col = "black")
+polygon(c(545, 538, 545, 552), c(403, 380, 380, 403), border = "black", col = "black")
+polygon(c(536, 533, 537, 540), c(367, 360, 360, 367), border = "black", col = "black")
+
+polygon(c(586, 583, 593, 596), c(342, 335, 332, 339), border = "black", col = "black")
+
+polygon(c(434, 431, 438, 442), c(357, 355, 346, 350), border = "black", col = "black")
+
+polygon(c(634, 631, 638, 640), c(212, 210, 207, 210), border = "black", col = "black")
+
+polygon(c(644, 641, 648, 650), c(209, 207, 204, 207), border = "black", col = "black")
+
+polygon(c(678, 672, 676, 680), c(244, 237, 234, 241), border = "black", col = "black")
+
+polygon(c(675, 669, 679, 683), c(291, 287, 284, 288), border = "black", col = "black")
+
+polygon(c(660, 654, 664, 668), c(294, 290, 287, 291), border = "black", col = "black")
+
+polygon(c(663, 660, 662, 665), c(164, 157, 154, 161), border = "black", col = "black")
+
+polygon(c(750, 744, 754, 758), c(169, 165, 162, 166), border = "black", col = "black")
+
+polygon(c(778, 775, 777, 780), c(114, 107, 104, 111), border = "black", col = "black")
+
+polygon(c(700, 694, 704, 708), c(199, 195, 192, 196), border = "black", col = "black")
+
+polygon(c(738, 735, 737, 740), c(204, 197, 194, 201), border = "black", col = "black")
+polygon(c(728, 725, 727, 730), c(214, 207, 204, 211), border = "black", col = "black")
+
+polygon(c(680, 674, 704, 708), c(300, 298, 291, 293), border = "black", col = "black")
+polygon(c(695, 689, 714, 718), c(325, 323, 317, 319), border = "black", col = "black")
+polygon(c(690, 684, 709, 713), c(338, 333, 327, 332), border = "black", col = "black")
+polygon(c(710, 706, 724, 728), c(390, 385, 381, 386), border = "black", col = "black")
+polygon(c(685, 681, 699, 703), c(395, 390, 386, 391), border = "black", col = "black")
+polygon(c(670, 666, 675, 679), c(398, 393, 391, 396), border = "black", col = "black")
+
+polygon(c(708, 705, 707, 710), c(309, 302, 299, 306), border = "black", col = "black")
+
+polygon(c(643, 640, 642, 645), c(319, 312, 309, 316), border = "black", col = "black")
+polygon(c(651, 645, 650, 653), c(339, 332, 329, 336), border = "black", col = "black")
+polygon(c(656, 650, 655, 658), c(359, 352, 349, 356), border = "black", col = "black")
+
+polygon(c(726, 720, 725, 728), c(354, 347, 344, 351), border = "black", col = "black")
+polygon(c(731, 725, 730, 733), c(374, 367, 364, 371), border = "black", col = "black")
+
+polygon(c(728, 718, 723, 730), c(324, 297, 294, 321), border = "black", col = "black")
+polygon(c(740, 733, 738, 742), c(364, 347, 344, 361), border = "black", col = "black")
+
+polygon(c(748, 742, 746, 750), c(384, 377, 374, 381), border = "black", col = "black")
+
+polygon(c(768, 764, 767, 770), c(314, 307, 304, 311), border = "black", col = "black")
+
+polygon(c(781, 777, 780, 783), c(364, 357, 354, 361), border = "black", col = "black")
+
+polygon(c(806, 797, 800, 808), c(389, 362, 359, 386), border = "black", col = "black")
+
+polygon(c(783, 779, 782, 785), c(314, 307, 304, 311), border = "black", col = "black")
+
+polygon(c(820, 812, 815, 822), c(454, 427, 424, 451), border = "black", col = "black")
+
+polygon(c(810, 809, 814, 815), c(414, 407, 404, 411), border = "black", col = "black")
+
+polygon(c(802, 787, 790, 804), c(444, 387, 384, 441), border = "black", col = "black")
+
+polygon(c(777, 758, 761, 779), c(484, 417, 414, 481), border = "black", col = "black")
+
+polygon(c(784, 778, 781, 787), c(444, 417, 414, 441), border = "black", col = "black")
+
+polygon(c(794, 783, 786, 797), c(534, 497, 494, 531), border = "black", col = "black")
+
+polygon(c(787, 802, 803, 790), c(509, 500, 494, 503), border = "black", col = "black")
+
+polygon(c(792, 807, 808, 795), c(529, 520, 514, 523), border = "black", col = "black")
+
+polygon(c(900, 907, 908, 900), c(484, 480, 473, 478), border = "black", col = "black")
+
+polygon(c(850, 857, 858, 850), c(494, 490, 483, 488), border = "black", col = "black")
+
+polygon(c(850, 857, 858, 850), c(474, 471, 467, 470), border = "black", col = "black")
+
+polygon(c(870, 877, 878, 870), c(470, 467, 463, 466), border = "black", col = "black")
+
+polygon(c(830, 877, 878, 830), c(348, 337, 333, 344), border = "black", col = "black")
+
+polygon(c(830, 860, 860, 830), c(333, 327, 320, 326), border = "black", col = "black")
+
+polygon(c(810, 800, 800, 810), c(338, 342, 338, 334), border = "black", col = "black")
+
+polygon(c(825, 815, 815, 825), c(326, 330, 326, 322), border = "black", col = "black")
+
+polygon(c(770, 760, 760, 770), c(378, 382, 378, 374), border = "black", col = "black")
+
+polygon(c(765, 755, 755, 765), c(391, 391, 389, 387), border = "black", col = "black")
+
+polygon(c(805, 795, 795, 805), c(483, 483, 481, 479), border = "black", col = "black")
+
+polygon(c(790, 780, 780, 790), c(273, 277, 273, 269), border = "black", col = "black")
+
+polygon(c(835, 825, 825, 835), c(536, 537, 532, 531), border = "black", col = "black")
+
+polygon(c(830, 815, 815, 830), c(571, 575, 577, 573), border = "black", col = "black")
+
+polygon(c(832, 822, 822, 832), c(581, 584, 581, 578), border = "black", col = "black")
+
+polygon(c(782, 772, 772, 782), c(598, 602, 599, 596), border = "black", col = "black")
+
+polygon(c(782, 772, 772, 782), c(616, 620, 617, 614), border = "black", col = "black")
+
+polygon(c(782, 772, 772, 782), c(626, 630, 627, 624), border = "black", col = "black")
+
+polygon(c(742, 732, 732, 742), c(608, 612, 609, 606), border = "black", col = "black")
+
+polygon(c(727, 717, 717, 727), c(631, 635, 632, 629), border = "black", col = "black")
+
+polygon(c(872, 862, 862, 872), c(716, 720, 717, 714), border = "black", col = "black")
+
+polygon(c(752, 742, 742, 752), c(593, 597, 594, 591), border = "black", col = "black")
+
+polygon(c(727, 717, 717, 727), c(545, 547, 544, 543), border = "black", col = "black")
+
+polygon(c(712, 702, 702, 712), c(547, 549, 543, 542), border = "black", col = "black")
+
+polygon(c(717, 677, 677, 717), c(503, 519, 516, 501), border = "black", col = "black")
+
+polygon(c(687, 662, 662, 687), c(503, 514, 511, 500), border = "black", col = "black")
+
+polygon(c(667, 642, 642, 667), c(409, 420, 417, 406), border = "black", col = "black")
+
+polygon(c(737, 712, 712, 737), c(399, 402, 399, 396), border = "black", col = "black")
+
+polygon(c(747, 722, 722, 747), c(434, 438, 435, 431), border = "black", col = "black")
+
+polygon(c(737, 727, 727, 737), c(445, 448, 445, 442), border = "black", col = "black")
+
+polygon(c(757, 702, 702, 757), c(556, 560, 555, 551), border = "black", col = "black")
+
+polygon(c(690, 687, 691, 694), c(607, 598, 598, 607), border = "black", col = "black")
+
+polygon(c(683, 680, 684, 687), c(587, 578, 578, 587), border = "black", col = "black")
+
+polygon(c(671, 662, 666, 675), c(547, 525, 525, 547), border = "black", col = "black")
+
+polygon(c(766, 759, 763, 770), c(587, 565, 565, 587), border = "black", col = "black")
+
+polygon(c(649, 637, 641, 653), c(470, 425, 425, 470), border = "black", col = "black")
+
+polygon(c(689, 677, 681, 693), c(500, 455, 455, 500), border = "black", col = "black")
+
+polygon(c(734, 730, 738, 742), c(485, 470, 470, 485), border = "black", col = "black")
+
+polygon(c(752, 755, 763, 760), c(450, 460, 460, 450), border = "black", col = "black")
+
+polygon(c(839, 842, 843, 843), c(687, 697, 697, 687), border = "black", col = "black")
+
+polygon(c(752, 759, 760, 755), c(737, 747, 747, 737), border = "black", col = "black")
+
+polygon(c(622, 638, 640, 625), c(537, 587, 587, 537), border = "black", col = "black")
+
+polygon(c(647, 640, 648, 655), c(617, 597, 597, 617), border = "black", col = "black")
+
+polygon(c(644, 654, 662, 652), c(532, 562, 562, 532), border = "black", col = "black")
+
+polygon(c(662, 669, 672, 665), c(577, 597, 597, 577), border = "black", col = "black")
+
+polygon(c(670, 672, 680, 677), c(612, 622, 622, 612), border = "black", col = "black")
+
+polygon(c(632, 634, 642, 640), c(612, 622, 622, 612), border = "black", col = "black")
+
+polygon(c(605, 607, 609, 607), c(602, 612, 612, 602), border = "black", col = "black")
+
+polygon(c(615, 627, 629, 617), c(542, 582, 582, 542), border = "black", col = "black")
+
+polygon(c(580, 582, 584, 582), c(552, 562, 562, 552), border = "black", col = "black")
+
+polygon(c(553, 555, 557, 555), c(562, 572, 572, 562), border = "black", col = "black")
+
+polygon(c(543, 545, 547, 545), c(562, 572, 572, 562), border = "black", col = "black")
+
+polygon(c(483, 485, 487, 485), c(577, 587, 587, 577), border = "black", col = "black")
+
+polygon(c(617, 562, 562, 617), c(430, 446, 439, 423), border = "black", col = "black")
+
+polygon(c(637, 582, 582, 637), c(517, 533, 529, 513), border = "black", col = "black")
+
+polygon(c(557, 576, 579, 560), c(447, 517, 517, 447), border = "black", col = "black")
+
+polygon(c(597, 616, 623, 604), c(432, 502, 502, 432), border = "black", col = "black")
+
+polygon(c(632, 637, 641, 637), c(474, 482, 482, 474), border = "black", col = "black")
+
+polygon(c(627, 630, 634, 632), c(444, 452, 452, 444), border = "black", col = "black")
+
+polygon(c(532, 522, 522, 532), c(557, 561, 565, 560), border = "black", col = "black")
+
+polygon(c(512, 502, 502, 512), c(582, 586, 590, 585), border = "black", col = "black")
+
+polygon(c(512, 482, 482, 512), c(547, 554, 561, 553), border = "black", col = "black")
+
+polygon(c(537, 512, 512, 537), c(432, 439, 444, 437), border = "black", col = "black")
+
+polygon(c(527, 502, 502, 527), c(412, 419, 424, 417), border = "black", col = "black")
+
+polygon(c(482, 442, 442, 482), c(417, 424, 426, 419), border = "black", col = "black")
+
+polygon(c(477, 467, 467, 477), c(429, 432, 434, 431), border = "black", col = "black")
+
+polygon(c(477, 467, 467, 477), c(444, 447, 449, 446), border = "black", col = "black")
+
+polygon(c(417, 387, 387, 417), c(444, 452, 454, 446), border = "black", col = "black")
+
+polygon(c(417, 397, 397, 417), c(379, 387, 389, 381), border = "black", col = "black")
+
+polygon(c(392, 396, 402, 398), c(432, 450, 450, 432), border = "black", col = "black")
+
+polygon(c(402, 406, 412, 408), c(462, 485, 485, 460), border = "black", col = "black")
+
+polygon(c(397, 382, 382, 397), c(463, 471, 473, 465), border = "black", col = "black")
+
+polygon(c(437, 422, 422, 437), c(452, 457, 459, 454), border = "black", col = "black")
+
+polygon(c(412, 414, 416, 415), c(562, 570, 568, 560), border = "black", col = "black")
+
+polygon(c(458, 464, 466, 461), c(532, 560, 558, 530), border = "black", col = "black")
+
+polygon(c(448, 452, 454, 451), c(502, 512, 510, 500), border = "black", col = "black")
+
+polygon(c(428, 432, 434, 431), c(422, 432, 430, 420), border = "black", col = "black")
+
+polygon(c(418, 424, 426, 423), c(392, 402, 400, 390), border = "black", col = "black")
+
+polygon(c(433, 437, 439, 438), c(387, 397, 395, 385), border = "black", col = "black")
+
+polygon(c(473, 477, 479, 478), c(382, 392, 390, 380), border = "black", col = "black")
+
+polygon(c(436, 440, 442, 441), c(407, 417, 415, 405), border = "black", col = "black")
+
+polygon(c(478, 482, 484, 483), c(402, 412, 410, 400), border = "black", col = "black")
+
+polygon(c(493, 505, 507, 498), c(452, 482, 480, 450), border = "black", col = "black")
+
+polygon(c(460, 464, 466, 465), c(482, 492, 490, 480), border = "black", col = "black")
+
+polygon(c(467, 474, 476, 472), c(512, 542, 540, 510), border = "black", col = "black")
+
+polygon(c(560, 564, 566, 565), c(528, 537, 535, 525), border = "black", col = "black")
+
+polygon(c(555, 559, 561, 560), c(508, 517, 515, 505), border = "black", col = "black")
+
+polygon(c(540, 544, 546, 545), c(448, 457, 455, 445), border = "black", col = "black")
+
+polygon(c(545, 552, 557, 550), c(468, 497, 495, 465), border = "black", col = "black")
+
+polygon(c(525, 532, 537, 530), c(388, 417, 415, 385), border = "black", col = "black")
+
+polygon(c(485, 492, 497, 490), c(373, 397, 395, 370), border = "black", col = "black")
+
+polygon(c(492, 495, 500, 497), c(410, 417, 415, 408), border = "black", col = "black")
+
+polygon(c(368, 370, 377, 375), c(755, 762, 765, 758), border = "black", col = "black")
+
+polygon(c(410, 410, 413, 413), c(60, 63, 63, 60), border = "black", col = "black")
+polygon(c(550, 550, 553, 553), c(30, 33, 33, 30), border = "black", col = "black")
+polygon(c(655, 655, 658, 658), c(75, 78, 78, 75), border = "black", col = "black")
+polygon(c(712, 712, 715, 715), c(70, 73, 73, 70), border = "black", col = "black")
+polygon(c(380, 380, 383, 383), c(275, 278, 278, 275), border = "black", col = "black")
+polygon(c(410, 410, 413, 413), c(360, 363, 363, 360), border = "black", col = "black")
+polygon(c(630, 630, 633, 633), c(420, 423, 423, 420), border = "black", col = "black")
+polygon(c(815, 815, 818, 818), c(640, 643, 643, 640), border = "black", col = "black")
+polygon(c(860, 860, 863, 863), c(920, 923, 923, 920), border = "black", col = "black")
+polygon(c(380, 380, 383, 383), c(900, 903, 903, 900), border = "black", col = "black")
+polygon(c(490, 490, 493, 493), c(680, 683, 683, 680), border = "black", col = "black")
+polygon(c(610, 610, 613, 613), c(635, 638, 638, 635), border = "black", col = "black")
+
 dev.off()
 
 
