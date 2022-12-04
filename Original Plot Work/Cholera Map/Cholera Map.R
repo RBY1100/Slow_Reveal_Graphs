@@ -1,6 +1,10 @@
 library(tidyverse)
 library(showtext)
 library(magick)
+library(showtext)
+
+font_add_google(name = "Roboto Mono", family = "Main")
+showtext_auto()
 
 gap <- ggplot() + theme_void()
 
@@ -1202,18 +1206,89 @@ polygon(c(492, 495, 500, 497), c(410, 417, 415, 408), border = "black", col = "b
 
 polygon(c(368, 370, 377, 375), c(755, 762, 765, 758), border = "black", col = "black")
 
+
 polygon(c(410, 410, 413, 413), c(60, 63, 63, 60), border = "black", col = "black")
+text(395, 60, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(550, 550, 553, 553), c(30, 33, 33, 30), border = "black", col = "black")
+text(535, 30, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(655, 655, 658, 658), c(75, 78, 78, 75), border = "black", col = "black")
+text(670, 75, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(712, 712, 715, 715), c(70, 73, 73, 70), border = "black", col = "black")
-polygon(c(380, 380, 383, 383), c(275, 278, 278, 275), border = "black", col = "black")
+text(727, 70, "PUMP", family = "Main", cex = .75, col = "black")
+
+polygon(c(380, 380, 383, 383), c(225, 228, 228, 225), border = "black", col = "black")
+text(395, 225, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(410, 410, 413, 413), c(360, 363, 363, 360), border = "black", col = "black")
+text(395, 360, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(630, 630, 633, 633), c(420, 423, 423, 420), border = "black", col = "black")
+text(645, 420, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(815, 815, 818, 818), c(640, 643, 643, 640), border = "black", col = "black")
+text(830, 640, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(860, 860, 863, 863), c(920, 923, 923, 920), border = "black", col = "black")
+text(875, 920, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(380, 380, 383, 383), c(900, 903, 903, 900), border = "black", col = "black")
+text(895, 900, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(490, 490, 493, 493), c(680, 683, 683, 680), border = "black", col = "black")
+text(505, 680, "PUMP", family = "Main", cex = .75, col = "black")
+
 polygon(c(610, 610, 613, 613), c(635, 638, 638, 635), border = "black", col = "black")
+text(595, 635, "PUMP", family = "Main", cex = .75, col = "black")
+
+
+text(100, 210, "OXFORD STREET", family = "Main", srt = 10, cex = 1, col = "black")
+text(170, 120, "REGENT STREET", family = "Main", srt = 285, cex = 1, col = "black")
+text(150, 60, "MARGARET STREET", family = "Main", srt = 15, cex = 1, col = "black")
+text(260, 90, "JOHN STREET", family = "Main", srt = 285, cex = 1, col = "black")
+text(80, 130, "PRINCES STREET", family = "Main", srt = 295, cex = 1, col = "black")
+text(120, 310, "PRINCES STREET", family = "Main", srt = 15, cex = 1, col = "black")
+text(160, 410, "HANOVER STREET", family = "Main", srt = 15, cex = 1, col = "black")
+text(60, 390, "HANOVER SQUARE", family = "Main", srt = 285, cex = 1, col = "black")
+text(80, 600, "GEORGE STREET", family = "Main", srt = 285, cex = 1, col = "black")
+text(160, 520, "MADDOX STREET", family = "Main", srt = 50, cex = 1, col = "black")
+text(160, 650, "CONDUIT STREET", family = "Main", srt = 50, cex = 1, col = "black")
+text(300, 660, "NEW BURLINGTON STREET", family = "Main", srt = 30, cex = 1, col = "black")
+text(260, 930, "BURLINGTON GARDENS", family = "Main", srt = 25, cex = 1, col = "black")
+text(140, 880, "PRINCES STREET", family = "Main", srt = 305, cex = 1, col = "black")
+text(180, 800, "CLIFFORD STREET", family = "Main", srt = 25, cex = 1, col = "black")
+text(230, 880, "CORK STREET", family = "Main", srt = 305, cex = 1, col = "black")
+text(290, 850, "OLD BURLINGTON STREET", family = "Main", srt = 305, cex = 1, col = "black")
+text(335, 820, "SAVILLE ROW", family = "Main", srt = 305, cex = 1, col = "black")
+text(480, 925, "SACKVILLE STREET", family = "Main", srt = 300, cex = 1, col = "black")
+text(475, 720, "REGENT STREET", family = "Main", srt = 305, cex = 1, col = "black")
+text(265, 420, "REGENT STREET", family = "Main", srt = 305, cex = 1, col = "black")
+text(680, 910, "REGENT QUADRANT", family = "Main", srt = -5, cex = 1, col = "black")
+text(670, 865, "MARYLEBON STREET QUADRANT", family = "Main", srt = -10, cex = 1, col = "black")
+text(810, 940, "PICCADILLY", family = "Main", srt = 20, cex = 1, col = "black")
+text(940, 860, "PRINCES STREET", family = "Main", srt = 285, cex = 1, col = "black")
+text(960, 570, "DEAN STREET", family = "Main", srt = 285, cex = 1, col = "black")
+text(840, 170, "DEAN STREET", family = "Main", srt = 295, cex = 1, col = "black")
+text(960, 195, "LORD SQUARE", family = "Main", srt = 285, cex = 1, col = "black")
+text(500, 115, "OXFORD STREET", family = "Main", srt = 10, cex = 1, col = "black")
+text(900, 60, "OXFORD STREET", family = "Main", srt = 10, cex = 1, col = "black")
+text(470, 50, "CASTLE ST. EAST", family = "Main", srt = 15, cex = 1, col = "black")
+text(710, 150, "WARDOUR STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(790, 160, "GREAT CHAPEL STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(660, 170, "SERWICK STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(590, 190, "POLAND STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(465, 230, "BLENHEIM STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(275, 240, "ARCYLL STREET", family = "Main", srt = 290, cex = 1, col = "black")
+text(500, 320, "GREAT MARLBOROUGH STREET", family = "Main", srt = 15, cex = 1, col = "black")
+text(570, 660, "BREWER STREET", family = "Main", srt = 15, cex = 1, col = "black")
+text(680, 750, "SHERRARD STREET", family = "Main", srt = 297, cex = 1, col = "black")
+text(780, 770, "GREAT WINDHILL STREET", family = "Main", srt = 297, cex = 1, col = "black")
+text(867, 770, "RUPERT STREET", family = "Main", srt = 293, cex = 1, col = "black")
+
+text(800, 990, "SCALE 50 INCHES TO A MILE.", family = "Main",cex = .5, col = "black")
+text(500, 990, "C.F. Cheffines, Lith, Southampton Bdgs, London.", family = "serif" ,cex = .5, col = "black")
 
 dev.off()
 
