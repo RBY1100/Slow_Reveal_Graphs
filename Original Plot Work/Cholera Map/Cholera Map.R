@@ -12,7 +12,6 @@ picture <- image_graph(width = 1000, height = 1000)
 gap 
 dev.off()
 
-
 img <- image_draw(picture)
 
 segments(x0=23,y0=23, x1=23, y1=977, lwd = .75, lty = "solid")
