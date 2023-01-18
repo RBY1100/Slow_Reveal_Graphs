@@ -5,6 +5,10 @@ library(grid)
 library(magick)
 library(srtools)
 
+#To install the srtools package, you will need to install the package from github:
+#
+#library(devtools)
+#install_github("RBY1100/srtools_package")
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
