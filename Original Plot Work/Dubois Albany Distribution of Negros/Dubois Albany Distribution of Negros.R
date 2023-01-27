@@ -4,6 +4,7 @@ library(magick)
 
 font_add_google(name = "Barlow Condensed", family = "Circle")
 font_add_google(name = "Cutive Mono", family = "Main")
+font_add_google(name = "Dancing Script", family = "Descriptor")
 font_add_google(name = "Russo One", family = "Test")
 
 showtext_auto()
@@ -2454,6 +2455,11 @@ text(150, 650, ".", family = "Circle",cex = 4, col = "#3a4339")
 text(150, 665, ".", family = "Circle",cex = 4, col = "#322b2d")
 text(150, 680, ".", family = "Circle",cex = 4, col = "black")
 text(170, 695, ".", family = "Circle",cex = 4, col = "#9d7643")
+text(183, 635, "Well-to-do", family = "Descriptor", cex = 1, col = "black")
+text(206, 650, "Better class of laborers", family = "Descriptor", cex = 1, col = "black")
+text(167, 665, "Poor", family = "Descriptor", cex = 1, col = "black")
+text(185, 680, "Lowest class", family = "Descriptor", cex = 1, col = "black")
+text(258, 695, "(Approximate distribution of whites)", family = "Descriptor", cex = 1, col = "black")
 
 dev.off()
 
