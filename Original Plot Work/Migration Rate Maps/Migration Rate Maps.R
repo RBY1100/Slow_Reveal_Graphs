@@ -2,13 +2,21 @@ library(tidyverse)
 library(usmap)
 library(readxl)
 library(showtext)
+library(maps)
+library(mapdata)
+library(ggpubr)
+library(magick)
+library(grid)
 
-
+#importing fonts
 font_add_google(name = "Encode Sans", family = "Main")
 font_add_google(name = "Bree Serif", family = "alt")
 
 showtext_auto()
 
+
+
+#creating alaska pngs for map
 png(here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "alaska1.png"),width=120,height=80)
 alaska1 <- plot_usmap(
   regions = c("state"),
@@ -41,6 +49,9 @@ alaska3 <- plot_usmap(
 alaska3
 dev.off()
 
+
+
+#creating hawaii pngs for map
 png(here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "hawaii1.png"),width=65,height=50)
 hawaii1 <- plot_usmap(
   regions = c("state"),
@@ -75,6 +86,8 @@ hawaii3
 dev.off()
 
 
+
+#creating pr png for map
 pr <- ggplot2::map_data('world', 'puerto rico')
 
 picture <- image_graph(width = 65, height = 50)
@@ -90,12 +103,7 @@ image_write(picture, path = here::here("Original Plot Work", "Migration Rate Map
 
 
 
-
-library(maps)
-library(mapdata)
-
-
-
+#Creating map1
 map <- map_data("state")
 types <- read_xlsx(here::here("Original Plot Work", "Migration Rate Maps", "Migration 1935.xlsx"))
 types$state <- tolower(types$state)
@@ -129,6 +137,8 @@ map1 <- ggplot(data = newmap) +
   guides(fill = guide_legend(nrow = 4))
 
 
+
+#Creating map2
 types2 <- read_xlsx(here::here("Original Plot Work", "Migration Rate Maps", "Migration 1965.xlsx"))
 types2$state <- tolower(types2$state)
 
@@ -161,7 +171,7 @@ map2 <- ggplot(data = newmap2) +
 
 
 
-
+#Creating map3
 types3 <- read_xlsx(here::here("Original Plot Work", "Migration Rate Maps", "Migration 1995.xlsx"))
 types3$state <- tolower(types3$state)
 
@@ -193,21 +203,18 @@ map3 <- ggplot(data = newmap3) +
   guides(fill = guide_legend(nrow = 4))
 map3
 
-library(ggpubr)
-library(magick)
-library(grid)
+
+
+#creating a gap graph and combining all maps into 1 image
 gap <- ggplot() + theme_void()
-
-
 png(here::here("Original Plot Work", "Migration Rate Maps", "Migration Rate Map Unfinished.png"),width=1700,height=400)
-
 print(ggarrange(gap,
                 ggarrange(gap, map1, gap, map2, gap, map3, gap, ncol=7, widths = c(.05, 20, .05, 20, .05, 20, .05)), nrow=2, heights =c(.20, .6)))
-
 dev.off()
 
 
 
+#importing the unfinished image and alaska, hawaii, and pr pngs
 original <- image_read(here::here("Original Plot Work", "Migration Rate Maps", "Migration Rate Map Unfinished.png"))
 alaska1 <- image_read(here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "alaska1.png"))
 alaska2 <- image_read(here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "alaska2.png"))
@@ -218,6 +225,8 @@ hawaii3 <- image_read(here::here("Original Plot Work", "Migration Rate Maps", "M
 pr <- image_read(here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "pr.png"))
 
 
+
+#combining all images together and adding text
 img <- image_draw(original)
 
 text(325, 65, "Migration Rate, 1935 to 1940", cex = 1.5, col = "black")
@@ -226,7 +235,6 @@ text(312, 120, "per 1,000 people in 1935", cex = 1, family="Main", col = "#31313
 text(446, 223, "Gain", cex = .75, family="alt", col = "#313131")
 text(446, 293, "Loss", cex = .75, family="alt", col = "#313131")
 text(290, 375, "07-01", cex = .75, family="Main", col = "#313131")
-
 grid.raster(alaska1, .055, .82, height = .20)
 grid.raster(hawaii1, .04, .1, height = .12)
 grid.raster(pr, .24, .1, height = .12)
@@ -237,7 +245,6 @@ text(872, 120, "per 1,000 people in 1965", cex = 1, family="Main", col = "#31313
 text(1013, 223, "Gain", cex = .75, family="alt", col = "#313131")
 text(1013, 293, "Loss", cex = .75, family="alt", col = "#313131")
 text(850, 375, "07-02", cex = .75, family="Main", col = "#313131")
-
 grid.raster(alaska2, .385, .82, height = .20)
 grid.raster(hawaii2, .37, .1, height = .12)
 grid.raster(pr, .57, .1, height = .12)
@@ -248,14 +255,11 @@ text(1437, 120, "per 1,000 people in 1995", cex = 1, family="Main", col = "#3131
 text(1580, 223, "Gain", cex = .75, family="alt", col = "#313131")
 text(1580, 293, "Loss", cex = .75, family="alt", col = "#313131")
 text(1415, 375, "07-03", cex = .75, family="Main", col = "#313131")
-
 grid.raster(alaska3, .72, .82, height = .20)
 grid.raster(hawaii3, .705, .1, height = .12)
 grid.raster(pr, .905, .1, height = .12)
 
-
 dev.off()
-
 
 image_write(img, path = here::here("Original Plot Work", "Migration Rate Maps", "Migration Rate Map.png"), format = "png")
 
