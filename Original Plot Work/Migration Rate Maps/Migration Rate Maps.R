@@ -106,7 +106,9 @@ newmap <- map %>%
                                    test == 2 ~ '0.0 to 29.9',
                                    test == 3 ~ '-30.0 to -0.1',
                                    test == 4 ~ '-121.4 to -30.1',
-  )))
+  ))) 
+
+newmap$Type <- factor(newmap$Type, levels=c("30 to 108.6", "0.0 to 29.9", "-30.0 to -0.1", "-121.4 to -30.1"))
 
 map1 <- ggplot(data = newmap) + 
   geom_polygon(aes(x=long, y=lat, group=group, 
@@ -127,7 +129,6 @@ map1 <- ggplot(data = newmap) +
   guides(fill = guide_legend(nrow = 4))
 
 
-
 types2 <- read_xlsx(here::here("Original Plot Work", "Migration Rate Maps", "Migration 1965.xlsx"))
 types2$state <- tolower(types2$state)
 
@@ -138,6 +139,7 @@ newmap2 <- map %>%
                                    test == 3 ~ '-30.0 to -0.1',
                                    test == 4 ~ '-121.4 to -30.1',
   )))
+newmap2$Type <- factor(newmap2$Type, levels=c("30 to 108.6", "0.0 to 29.9", "-30.0 to -0.1", "-121.4 to -30.1"))
 
 map2 <- ggplot(data = newmap2) + 
   geom_polygon(aes(x=long, y=lat, group=group, 
@@ -154,9 +156,9 @@ map2 <- ggplot(data = newmap2) +
         plot.title = element_text(size = 20, hjust = .5, family = "Title"),
         plot.margin = margin(30,10,10,10),
         plot.background = element_rect(fill = "white")) +
-  scale_fill_manual(values = c("#ba7733","#bee0e9","#ffe0c1","#00867c")) +
+  scale_fill_manual(values = c("#00867c","#ffe0c1","#bee0e9","#ba7733")) +
   guides(fill = guide_legend(nrow = 4))
-print(map2)
+
 
 
 
@@ -170,6 +172,7 @@ newmap3 <- map %>%
                                    test == 3 ~ '-30.0 to -0.1',
                                    test == 4 ~ '-121.4 to -30.1',
   )))
+newmap3$Type <- factor(newmap3$Type, levels=c("30 to 108.6", "0.0 to 29.9", "-30.0 to -0.1", "-121.4 to -30.1"))
 
 map3 <- ggplot(data = newmap3) + 
   geom_polygon(aes(x=long, y=lat, group=group, 
@@ -186,9 +189,9 @@ map3 <- ggplot(data = newmap3) +
         plot.title = element_text(size = 20, hjust = .5, family = "Title"),
         plot.margin = margin(30,10,10,10),
         plot.background = element_rect(fill = "white")) +
-  scale_fill_manual(values = c("#ba7733","#bee0e9","#ffe0c1","#00867c")) +
+  scale_fill_manual(values = c("#00867c","#ffe0c1","#bee0e9","#ba7733")) +
   guides(fill = guide_legend(nrow = 4))
-print(map3)
+map3
 
 library(ggpubr)
 library(magick)
