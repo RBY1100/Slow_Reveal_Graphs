@@ -3,13 +3,14 @@ library(magick)
 library(ggpubr)
 library(showtext)
 
+#Importing Fonts
 font_add_google(name = "Roboto", regular.wt = 900, family = "Main")
 font_add_google(name = "Roboto", regular.wt = 100, family = "Alt")
 
 showtext_auto()
 
 
-
+#Creating Data
 data <- data.frame(region = c('Northeast', 'Midwest', 'South', 'West', 'Northeast', 'Midwest', 'South', 'West', 'Northeast', 'Midwest', 'South', 'West'),
                  type = c("Domestic Immigrants", "Domestic Immigrants","Domestic Immigrants","Domestic Immigrants",
                           "Domestic Outmigrants", "Domestic Outmigrants","Domestic Outmigrants","Domestic Outmigrants",
@@ -19,7 +20,7 @@ data <- data.frame(region = c('Northeast', 'Midwest', 'South', 'West', 'Northeas
 data$region <- factor(data$region, levels = c("Northeast", "Midwest", "South", 'West'))
 
 
-
+#Creating Graphs
 graph <- ggplot(data, aes(fill=type, y=count, x=region)) + 
   geom_bar(position=position_dodge(.55), stat="identity", width = .55) +
   scale_y_continuous(position = "left", limits = c(-3.2,5), breaks = seq(-3,5,1), sec.axis = dup_axis( trans=~. , name="Second Axis")) +
@@ -35,24 +36,15 @@ graph <- ggplot(data, aes(fill=type, y=count, x=region)) +
         panel.ontop = TRUE) +
   scale_fill_manual(values = c("#4c82c2","#8ca2d3","#86a05f"))
 
-
-
-  
+#Arranging into png and reimporting
 gap <- ggplot() + theme_void()
 
-
-
-png(here::here("Original Plot Work", "Migration by Type and Region", "Migration by Type and Region Unifinished.png"),width=700,height=450)
-
+png(here::here("Original Plot Work", "Migration by Type and Region", "Migration by Type and Region Unfinished.png"),width=700,height=450)
 ggarrange(gap, graph, nrow = 2, heights = c(.5, 1))
-
 dev.off()
+original <- image_read(here::here("Original Plot Work", "Migration by Type and Region", "Migration by Type and Region Unfinished.png"))
 
-
-original <- image_read(here::here("Original Plot Work", "Migration by Type and Region", "Migration by Type and Region Unifinished.png"))
-
-
-
+#Drawing Final Details
 img <- image_draw(original)
 
 segments(x0=22,y0=319, x1=676, y1=319, lwd = 2.25, lty = "solid", col = "#8f8f8f")
