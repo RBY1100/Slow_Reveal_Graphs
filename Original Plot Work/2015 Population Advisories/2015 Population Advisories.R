@@ -254,7 +254,7 @@ polygon(c(630, 635, 635, 630), c(480, 480, 90, 90), border = "white", col = "whi
 dev.off()
 
 
-image_write(img, path = here::here("Original Plot Work", "2015 Population Advisories", "5 2015 Population Advisories.png"), format = "png")
+image_write(img, path = here::here("Original Plot Work", "2015 Population Advisories", "4 2015 Population Advisories.png"), format = "png")
 
 
 
