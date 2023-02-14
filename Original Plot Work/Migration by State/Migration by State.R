@@ -16,6 +16,7 @@ font_add_google(name = "Roboto", regular.wt = 500, family = "Title")
 showtext_auto()
 
 
+#creating alaska png
 png(here::here("Original Plot Work", "Migration by State", "Minor Areas", "alaska.png"),width=120,height=80)
 alaska <- plot_usmap(
   regions = c("state"),
@@ -26,7 +27,7 @@ alaska <- plot_usmap(
 alaska
 dev.off()
 
-#creating hawaii pngs for map
+#creating hawaii png
 png(here::here("Original Plot Work", "Migration by State", "Minor Areas", "hawaii.png"),width=65,height=50)
 hawaii <- plot_usmap(
   regions = c("state"),
@@ -37,7 +38,7 @@ hawaii <- plot_usmap(
 hawaii
 dev.off()
 
-#creating pr png for map
+#creating pr png
 pr <- ggplot2::map_data('world', 'puerto rico')
 
 picture <- image_graph(width = 65, height = 50)
@@ -52,7 +53,7 @@ dev.off()
 image_write(picture, path = here::here("Original Plot Work", "Migration by State", "Minor Areas", "pr.png"), format = "png")
 
 
-
+#creating baseline map
 map <- map_data("state")
 types <- read_xlsx(here::here("Original Plot Work", "Migration Rate Maps", "Migration 1935.xlsx"))
 types$state <- tolower(types$state)
