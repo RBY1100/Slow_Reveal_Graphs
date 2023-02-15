@@ -350,7 +350,55 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
+#Original Graph
 
+graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, color=Type, alpha = .5, size=1.75)) +
+  labs(title = "2015 advisories",
+       subtitle = "(Population and Length of Time))",
+       y = "Population served",
+       x = "Length of advisory (years)") +
+  theme(legend.position = "none",
+        plot.title = element_text(size=16),
+        plot.subtitle = element_text(size=16),
+        axis.title = element_text(size=11, color="black"),
+        axis.text = element_text(size=12, color="black"),
+        axis.ticks = element_line(linewidth = 1),
+        axis.ticks.length=unit(.2, "cm"),
+        panel.grid.major = element_line(color="black"),
+        panel.grid.minor = element_line(color="gray"),
+        panel.background = element_rect(color="gray" ,fill = "white")) +
+  scale_color_manual(values = c("#ff9c00","#8f4fa9"))
+
+
+
+gap <- ggplot() + theme_void()
+
+png(here::here("Original Plot Work", "2015 Population Advisories", "Unfinished Graphs", "7 Original 2015 Population Advisories U.png"),width=700,height=500)
+ggarrange(gap,
+          ggarrange(gap, graph, gap, nrow = 3, heights = c(.1, 1, .15)),
+          gap, ncol = 3, widths = c(.05,1,.1))
+dev.off()
+
+
+
+original <- image_read(here::here("Original Plot Work", "2015 Population Advisories", "Unfinished Graphs", "7 Original 2015 Population Advisories U.png"))
+
+
+img <- image_draw(original)
+
+text(200, 460, ".", cex = 8, family="Circle", col = "#ff9c00")
+text(310, 460, "Active (as of 12/31/2015)", cex = 1.5)
+text(440, 460, ".", cex = 8, family="Circle", col = "#8f4fa9")
+text(485, 460, "Revoked", cex = 1.5)
+
+polygon(c(90, 635, 635, 90), c(97, 97, 90, 90), border = "white", col = "white")
+polygon(c(630, 635, 635, 630), c(480, 480, 90, 90), border = "white", col = "white")
+
+
+dev.off()
+
+
+image_write(img, path = here::here("Original Plot Work", "2015 Population Advisories", "7 Original 2015 Population Advisories.png"), format = "png")
 
 
 
