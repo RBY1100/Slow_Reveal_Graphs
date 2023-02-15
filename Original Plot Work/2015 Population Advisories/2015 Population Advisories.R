@@ -354,7 +354,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, color=Type, alpha = .5, size=1.75)) +
   labs(title = "2015 advisories",
-       subtitle = "(Population and Length of Time))",
+       subtitle = "(Population and Length of Time)",
        y = "Population served",
        x = "Length of advisory (years)") +
   theme(legend.position = "none",
