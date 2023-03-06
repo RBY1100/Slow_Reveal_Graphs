@@ -53,6 +53,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "3 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "3 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "3 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 4
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data2.xlsx"))
@@ -70,6 +76,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "4 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "4 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "4 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 5
@@ -89,9 +101,11 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "5 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "5 Womans Suffrage Timeline.png"))
 
-
-
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "5 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 6
@@ -111,6 +125,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "6 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "6 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "6 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 7
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data3.xlsx"))
@@ -128,6 +148,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "7 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "7 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "7 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 8
@@ -147,6 +173,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "8 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "8 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "8 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 9
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data4.xlsx"))
@@ -164,6 +196,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "9 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "9 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "9 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 10
@@ -183,6 +221,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "10 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "10 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "10 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 11
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data5.xlsx"))
@@ -200,6 +244,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "11 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "11 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "11 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 12
@@ -219,6 +269,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "12 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "12 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "12 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 13
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data6.xlsx"))
@@ -236,6 +292,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "13 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "13 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "13 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 14
@@ -255,6 +317,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "14 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "14 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "14 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 15
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data7.xlsx"))
@@ -272,6 +340,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "15 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "15 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "15 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 16
@@ -291,6 +365,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "16 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "16 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "16 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 17
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data8.xlsx"))
@@ -308,6 +388,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "17 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "17 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "17 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 18
@@ -327,6 +413,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "18 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "18 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "18 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 19
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data9.xlsx"))
@@ -344,6 +436,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "19 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "19 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "19 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 20
@@ -363,6 +461,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "20 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "20 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "20 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 21
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data10.xlsx"))
@@ -380,6 +484,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "21 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "21 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "21 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 22
@@ -399,6 +509,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "22 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "22 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "22 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 23
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data11.xlsx"))
@@ -416,6 +532,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "23 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "23 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "23 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 24
@@ -435,6 +557,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "24 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "24 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "24 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 25
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data12.xlsx"))
@@ -452,6 +580,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "25 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "25 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "25 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 26
@@ -471,6 +605,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "26 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "26 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "26 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 27
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data13.xlsx"))
@@ -488,6 +628,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "27 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "27 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "27 Womans Suffrage Timeline.png"), format = "png")
 
 
 #Graph 28
@@ -507,6 +653,12 @@ leaf <- leaflet(data = mapStates) %>%
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "28 Womans Suffrage Timeline.png"))
 
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "28 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "28 Womans Suffrage Timeline.png"), format = "png")
+
 
 #Graph 29
 types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data14.xlsx"))
@@ -524,3 +676,9 @@ leaf <- leaflet(data = mapStates) %>%
 
 
 mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "29 Womans Suffrage Timeline.png"))
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "29 Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "29 Womans Suffrage Timeline.png"), format = "png")
