@@ -83,24 +83,8 @@ original <- image_read(here::here("Original Plot Work", "Domestication of Animal
 
 img <- image_draw(original)
 
-text(427, 138, "13,000-34,000 BCE", family="bold", cex = .75, srt=7, col = "black")
-text(189, 424, "8,000 BCE", family="bold", cex = .75, srt=275, col = "black")
-text(206, 441, "8,500 BCE", family="bold", cex = .75, srt=282, col = "black")
-text(223, 448, "8,300 BCE", family="bold", cex = .75, srt=284, col = "black")
-text(237, 447, "8,300 BCE", family="bold", cex = .75, srt=285, col = "black")
-text(258, 469, "7,500 BCE", family="bold", cex = .75, srt=290, col = "black")
-text(290, 500, "6,000 BCE", family="bold", cex = .75, srt=301, col = "black")
-text(332, 527, "4,000 BCE", family="bold", cex = .75, srt=317, col = "black")
-text(351, 525, "3,500 BCE", family="bold", cex = .75, srt=319, col = "black")
-text(368, 520, "3,000 BCE", family="bold", cex = .75, srt=323, col = "black")
-text(383, 514, "2,500 BCE", family="bold", cex = .75, srt=325, col = "black")
-text(399, 509, "2,000 BCE", family="bold", cex = .75, srt=329, col = "black")
-text(422, 505, "1,000 BCE", family="bold", cex = .75, srt=340, col = "black")
-text(438, 496, "0 CE", family="bold", cex = .75, srt=348, col = "black")
-text(462, 488, "1,000", family="bold", cex = .75, srt=355, col = "black")
-
 segments(x0=473,y0=325, x1=473, y1=125, lwd = 1, lty = "solid")
-segments(x0=473,y0=25, x1=473, y1=125, lwd = 1, lty = "solid", col="#359dbc")
+segments(x0=473,y0=30, x1=473, y1=125, lwd = 1, lty = "solid", col="#359dbc")
 
 segments(x0=461,y0=325, x1=431, y1=142, lwd = 1, lty = "solid")
 
@@ -211,7 +195,21 @@ segments(x0=283,y0=504, x1=286, y1=502, lwd = 1, lty = "solid")
 segments(x0=273,y0=509, x1=221, y1=537, lwd = 1, lty = "solid", col="#e85d41")
 segments(x0=211,y0=541, x1=207, y1=543, lwd = 1, lty = "solid")
 
-
+text(427, 138, "13,000-34,000 BCE", family="bold", cex = .75, srt=7, col = "black")
+text(189, 424, "9,000 BCE", family="bold", cex = .75, srt=275, col = "black")
+text(206, 441, "8,500 BCE", family="bold", cex = .75, srt=282, col = "black")
+text(223, 448, "8,300 BCE", family="bold", cex = .75, srt=284, col = "black")
+text(237, 447, "8,300 BCE", family="bold", cex = .75, srt=285, col = "black")
+text(258, 469, "7,500 BCE", family="bold", cex = .75, srt=290, col = "black")
+text(290, 500, "6,000 BCE", family="bold", cex = .75, srt=301, col = "black")
+text(332, 527, "4,000 BCE", family="bold", cex = .75, srt=317, col = "black")
+text(351, 525, "3,500 BCE", family="bold", cex = .75, srt=319, col = "black")
+text(368, 520, "3,000 BCE", family="bold", cex = .75, srt=323, col = "black")
+text(383, 514, "2,500 BCE", family="bold", cex = .75, srt=325, col = "black")
+text(399, 509, "2,000 BCE", family="bold", cex = .75, srt=329, col = "black")
+text(422, 505, "1,000 BCE", family="bold", cex = .75, srt=340, col = "black")
+text(438, 496, "0 CE", family="bold", cex = .75, srt=348, col = "black")
+text(462, 488, "1,000", family="bold", cex = .75, srt=355, col = "black")
 
 text(180, 40, "Domestication", family="titles", cex = 4, col = "black")
 text(137, 85, "of Animals", family="titles", cex = 4, col = "black")
@@ -228,14 +226,56 @@ text(92, 220, "Domesticated animals fall into roughly", family="normal", cex = .
 text(92, 230, "three categories [though many animals", family="normal", cex = .75, col = "black")
 text(55, 240, "fall under multiple]:", family="normal", cex = .75, col = "black")
 
+text(240, 185, "15,000 BCE", family="skinny", cex = .7, srt=315, col = "black")
+text(145, 350, "10,000 BCE", family="skinny", cex = .7, srt=350, col = "black")
+text(185, 552, "5,000 BCE", family="skinny", cex = .7, srt=20, col = "black")
+text(473, 464, "2022 CE", family="skinny", cex = .6, srt=90, col = "black")
+text(473, 348, "20,000 BCE", family="skinny", cex = .6, srt=270, col = "black")
+text(442, 463, "0 CE", family="skinny", cex = .6, srt=65, col = "black")
 
+text(435, 34, "13,000-34,000 BCE", family="skinny", cex = .7, col = "black")
+text(461, 42, "Dog", family="bold", cex = .75, col = "black")
 
+text(135, 390, "Sheep", family="bold", cex = .75, col = "black")
+text(133, 398, "9,000 BCE", family="skinny", cex = .65, col = "black")
 
+text(109, 412, "Goat", family="bold", cex = .75, col = "black")
+text(138, 413, "8,500 BCE", family="skinny", cex = .65, col = "black")
 
+text(98, 422.5, "Pig & Cow", family="bold", cex = .75, col = "black")
+text(138, 422.5, "8,300 BCE", family="skinny", cex = .65, col = "black")
 
+text(110, 456, "Cat", family="bold", cex = .75, col = "black")
+text(138, 456, "7,500 BCE", family="skinny", cex = .65, col = "black")
 
+text(115, 515, "Zebu (Humped Cow)", family="bold", cex = .75, col = "black")
+text(138, 507, "6,000 BCE", family="skinny", cex = .65, col = "black")
 
+text(150, 567, "Llama", family="bold", cex = .75, col = "black")
+text(183, 567, "4,000 BCE", family="skinny", cex = .65, col = "black")
 
+text(150, 579, "Horse", family="bold", cex = .75, col = "black")
+text(183, 579, "3,500 BCE", family="skinny", cex = .65, col = "black")
+
+text(150, 589, "Alpaca", family="bold", cex = .75, col = "black")
+text(183, 589, "3,000 BCE", family="skinny", cex = .65, col = "black")
+
+text(150, 602, "Bactrian Camel (two-humped)", family="bold", cex = .75, col = "black")
+text(230, 602, "2,500 BCE", family="skinny", cex = .65, col = "black")
+
+text(180, 615, "Chicken", family="bold", cex = .75, col = "black")
+text(220, 615, "2,000 BCE", family="skinny", cex = .65, col = "black")
+
+text(160, 659, "Arabian Camel (one-humped)", family="bold", cex = .75, col = "black")
+text(240, 659, "1,000 BCE", family="skinny", cex = .65, col = "black")
+
+text(205, 672, "Turkey", family="bold", cex = .75, col = "black")
+text(250, 672, "0 CE", family="skinny", cex = .65, col = "black")
+
+text(209, 700, "Duck", family="bold", cex = .75, col = "black")
+text(244, 700, "1,000 CE", family="skinny", cex = .65, col = "black")
+
+text(85, 755, "Though this timeline uses", family="titles", cex = .65, col = "black")
 
 dev.off()
 
