@@ -6,6 +6,7 @@ library(ggpol)
 library(ggnewscale)
 library(magick)
 library(showtext)
+library(grid)
 
 font_add_google(name = "Roboto", regular.wt=700, family = "bold")
 font_add_google(name = "Roboto", regular.wt=300, family = "skinny")
@@ -78,6 +79,27 @@ ggarrange(gap, ggarrange(gap, graph, gap, ncol = 3, widths = c(.4, 1, .02)), gap
 dev.off()
 
 original <- image_read(here::here("Original Plot Work", "Domestication of Animals", "temp.png"))
+cat <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "cat.png"))
+bottomrib <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "bottomribbon.png"))
+bowl <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "bowl.png"))
+camels <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "camels.png"))
+center <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "centergroup.png"))
+collar <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "collar.png"))
+dna <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "dna.png"))
+dogpaw <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "dogpaw.png"))
+dogsym <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "dogsym.png"))
+donkey <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "donkey.png"))
+duck <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "duck.png"))
+ducks <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "ducks.png"))
+humandog <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "humandog.png"))
+humanpigsheepgoat <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "humanpigsheepgoat.png"))
+rduck <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "rduck.png"))
+steak <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "steak.png"))
+tractor <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "tractor.png"))
+turkey <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "turkey.png"))
+villagerduck <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "villagerduck.png"))
+xsym <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "xsym.png"))
+zebu <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "zebu.png"))
 
 
 
@@ -276,6 +298,24 @@ text(209, 700, "Duck", family="bold", cex = .75, col = "black")
 text(244, 700, "1,000 CE", family="skinny", cex = .65, col = "black")
 
 text(85, 755, "Though this timeline uses", family="titles", cex = .65, col = "black")
+
+grid.raster(cat, .165, .505, height = .064)
+grid.raster(humandog, .9, .9, height = .11)
+grid.raster(collar, .07, .71, height = .034)
+grid.raster(steak, .066, .678, height = .04)
+grid.raster(tractor, .069, .645, height = .05)
+grid.raster(humanpigsheepgoat, .09, .575, height = .11)
+grid.raster(zebu, .1, .455, height = .075)
+grid.raster(camels, .1, .358, height = .15)
+grid.raster(turkey, .15, .27, height = .06)
+grid.raster(duck, .25, .23, height = .04)
+grid.raster(center, .9, .55, height = .11)
+
+grid.raster(dna, .11, .19, height = .05)
+grid.raster(dogpaw, .4, .19, height = .05)
+grid.raster(rduck, .7, .19, height = .05)
+
+grid.raster(bottomrib, .5, .025, height = .05)
 
 dev.off()
 
