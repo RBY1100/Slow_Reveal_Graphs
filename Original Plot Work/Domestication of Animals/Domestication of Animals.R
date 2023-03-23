@@ -1282,15 +1282,12 @@ text(250, 672, "0 CE", family="skinny", cex = .65, col = "black")
 text(209, 700, "Duck", family="bold", cex = .75, col = "black")
 text(244, 700, "1,000 CE", family="skinny", cex = .65, col = "black")
 
-grid.raster(icons, .16, .67, height = .1)
 grid.raster(cat, .165, .505, height = .064)
 grid.raster(humanpigsheepgoat, .09, .575, height = .11)
 grid.raster(zebu, .1, .455, height = .075)
 grid.raster(camels, .1, .358, height = .15)
 grid.raster(turkey, .15, .27, height = .06)
 grid.raster(duck, .25, .23, height = .04)
-
-segments(x0=8,y0=850, x1=490, y1=850, lwd = 1, lty = "solid", col="#b6b1ad")
 
 grid.raster(box, .7, .67, height = .2)
 grid.raster(center, .9, .55, height = .11)
@@ -1500,12 +1497,6 @@ grid.raster(zebu, .1, .455, height = .075)
 grid.raster(camels, .1, .358, height = .15)
 grid.raster(turkey, .15, .27, height = .06)
 grid.raster(duck, .25, .23, height = .04)
-
-grid.raster(dna, .11, .19, height = .05)
-grid.raster(dogpaw, .4, .19, height = .05)
-grid.raster(rduck, .7, .19, height = .05)
-
-segments(x0=8,y0=850, x1=490, y1=850, lwd = 1, lty = "solid", col="#b6b1ad")
 
 grid.raster(box, .7, .67, height = .2)
 grid.raster(center, .9, .55, height = .11)
