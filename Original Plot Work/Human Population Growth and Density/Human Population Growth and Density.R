@@ -266,9 +266,6 @@ segments(x0=967,y0=120, x1=972, y1=120, lwd = 1, lty = "solid")
 
 segments(x0=0,y0=615, x1=1100, y1=610, lwd = 2, lty = "solid")
 
-polygon(c(155, 830, 830, 155), c(101, 101, 460, 460), border = "#c7e3ef", col = "#c7e3ef")
-
-
 dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Human Population Growth and Density", "1 Human Population Growth and Density.png"), format = "png")
@@ -377,7 +374,6 @@ text(967, 596, "2019", family = "Main", cex = 1.75, col = "black")
 
 text(85, 598, "Year", family = "Main", cex = 1.5, col = "black")
 
-polygon(c(155, 830, 830, 155), c(101, 101, 460, 460), border = "#c7e3ef", col = "#c7e3ef")
 segments(x0=0,y0=615, x1=1100, y1=610, lwd = 2, lty = "solid")
 
 dev.off()
@@ -519,8 +515,6 @@ segments(x0=967,y0=447, x1=991, y1=447, lwd = 1.25, lty = "solid")
 segments(x0=967,y0=331, x1=991, y1=331, lwd = 1.25, lty = "solid")
 
 segments(x0=0,y0=615, x1=1100, y1=610, lwd = 2, lty = "solid")
-polygon(c(155, 830, 830, 155), c(101, 101, 460, 460), border = "#c7e3ef", col = "#c7e3ef")
-
 
 dev.off()
 

@@ -877,3 +877,63 @@ text(985, 575, "Georgia", cex = 1, family="Main", col = "#313131")
 text(1005, 650, "Florida", cex = 1, family="Main", col = "#313131")
 dev.off()
 image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "27 Womans Suffrage Timeline.png"), format = "png")
+
+
+
+
+
+
+
+
+#Graph 8a
+types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data4a.xlsx"))
+
+mapStates <- maps::map("state", fill = TRUE, plot = TRUE)
+
+mapStates$test <- types1$test
+factpal <- colorFactor(c("#ededed","#6d8fb4"), mapStates$test)
+
+leaf <- leaflet(data = mapStates) %>% 
+  addTiles() %>%
+  addPolygons(stroke = TRUE, fillColor = ~factpal(test), color="black", fillOpacity = 1, weight=.5) %>%
+  setView(lng = -96, lat = 39, zoom = 5) %>%
+  addProviderTiles("CartoDB.PositronNoLabels")
+
+
+mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "8a Womans Suffrage Timeline.png"), vwidth = 1400, vheight = 800)
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "8a Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+text(140, 140, "Washington", cex = 1, family="Main", col = "#313131")
+text(345, 395, "Utah", cex = 1, family="Main", col = "#313131")
+text(435, 280, "Wyoming", cex = 1, family="Main", col = "#313131")
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "8a Womans Suffrage Timeline.png"), format = "png")
+
+
+#Graph 9a
+types1 <- read_xlsx(here::here("Original Plot Work", "Womans Suffrage Timeline", "Data", "data5a.xlsx"))
+
+mapStates <- maps::map("state", fill = TRUE, plot = TRUE)
+
+mapStates$test <- types1$test
+factpal <- colorFactor(c("#ededed","#6d8fb4"), mapStates$test)
+
+leaf <- leaflet(data = mapStates) %>% 
+  addTiles() %>%
+  addPolygons(stroke = TRUE, fillColor = ~factpal(test), color="black", fillOpacity = 1, weight=.5) %>%
+  setView(lng = -96, lat = 39, zoom = 5) %>%
+  addProviderTiles("CartoDB.PositronNoLabels")
+
+
+mapshot(leaf, file = here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "9a Womans Suffrage Timeline.png"), vwidth = 1400, vheight = 800)
+
+original <- image_read(here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "9a Womans Suffrage Timeline.png"))
+
+img <- image_draw(original)
+text(140, 140, "Washington", cex = 1, family="Main", col = "#313131")
+text(345, 395, "Utah", cex = 1, family="Main", col = "#313131")
+text(435, 280, "Wyoming", cex = 1, family="Main", col = "#313131")
+dev.off()
+image_write(img, path = here::here("Original Plot Work", "Womans Suffrage Timeline", "Final Images", "9a Womans Suffrage Timeline.png"), format = "png")

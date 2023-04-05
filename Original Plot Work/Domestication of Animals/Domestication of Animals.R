@@ -461,8 +461,6 @@ text(422, 505, "1,000 BCE", family="bold", cex = .75, srt=340, col = "black")
 text(438, 496, "0 CE", family="bold", cex = .75, srt=348, col = "black")
 text(462, 488, "1,000", family="bold", cex = .75, srt=355, col = "black")
 
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
-
 dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "1 Domestication of Animals.png"), format = "png")
@@ -581,11 +579,7 @@ text(422, 505, "1,000 BCE", family="bold", cex = .75, srt=340, col = "black")
 text(438, 496, "0 CE", family="bold", cex = .75, srt=348, col = "black")
 text(462, 488, "1,000", family="bold", cex = .75, srt=355, col = "black")
 
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
-
 text(240, 185, "15,000 BCE", family="skinny", cex = .7, srt=315, col = "black")
-
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
 
 dev.off()
 
@@ -740,18 +734,10 @@ text(250, 672, "0 CE", family="skinny", cex = .65, col = "black")
 
 text(244, 700, "1,000 CE", family="skinny", cex = .65, col = "black")
 
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
 
 dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "3 Domestication of Animals.png"), format = "png")
-
-
-
-
-
-
-
 
 
 
@@ -901,7 +887,6 @@ text(250, 672, "0 CE", family="skinny", cex = .65, col = "black")
 
 text(244, 700, "1,000 CE", family="skinny", cex = .65, col = "black")
 
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
 
 grid.raster(center, .9, .55, height = .11)
 
@@ -1095,8 +1080,6 @@ grid.raster(zebu, .1, .455, height = .075)
 grid.raster(camels, .1, .358, height = .15)
 grid.raster(turkey, .15, .27, height = .06)
 grid.raster(duck, .25, .23, height = .04)
-
-polygon(c(278, 278, 421, 421), c(384, 207, 207, 384), border = "#f2ece7", col = "#f2ece7")
 
 grid.raster(center, .9, .55, height = .11)
 
