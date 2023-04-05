@@ -392,9 +392,9 @@ grid.raster(camels, .1, .358, height = .15)
 grid.raster(turkey, .15, .27, height = .06)
 grid.raster(duck, .25, .23, height = .04)
 
-grid.raster(dna, .11, .19, height = .05)
-grid.raster(dogpaw, .4, .19, height = .05)
-grid.raster(rduck, .7, .19, height = .05)
+grid.raster(dna, .11, .19, height = .035)
+grid.raster(dogpaw, .39, .19, height = .035)
+grid.raster(rduck, .7, .19, height = .035)
 
 
 
@@ -1777,9 +1777,9 @@ grid.raster(camels, .1, .358, height = .15)
 grid.raster(turkey, .15, .27, height = .06)
 grid.raster(duck, .25, .23, height = .04)
 
-grid.raster(dna, .11, .19, height = .05)
-grid.raster(dogpaw, .4, .19, height = .05)
-grid.raster(rduck, .7, .19, height = .05)
+grid.raster(dna, .11, .19, height = .035)
+grid.raster(dogpaw, .39, .19, height = .035)
+grid.raster(rduck, .7, .19, height = .035)
 
 
 
