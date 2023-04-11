@@ -4,6 +4,22 @@ library(readxl)
 library(magick)
 library(grid)
 
+#
+# FILE:
+# Mortality of American Negros.R
+#
+# DESCRIPTION:
+# This code is for the Mortality of American Negros graph by Du Bois. The png shows the final recreated graph.  
+# Source: https://blogs.scientificamerican.com/sa-visual/w-e-b-du-bois-scientific-american-and-data-stories-of-the-early-1900s/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Quicksand", family = "alt")
 
 brac <- image_read(here::here("Original Plot Work", "Mortality of American Negros", "bracket.png"))
@@ -19,6 +35,7 @@ gap
 dev.off()
 
 
+## N: RECREATED GRAPHIC
 
 img <- image_draw(picture)
 

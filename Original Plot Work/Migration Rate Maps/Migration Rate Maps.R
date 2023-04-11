@@ -8,6 +8,23 @@ library(ggpubr)
 library(magick)
 library(grid)
 
+#
+# FILE:
+# Migration Rate Maps.R
+#
+# DESCRIPTION:
+# This code is for Internal Migration Graph by State from the U.S. Census Bureau. The png's include   
+# different maps being created into the final png named "Migration Rate Map.png".   
+# Source: https://www.census.gov/content/dam/Census/library/publications/2007/dec/7_migration.pdf (page 3)
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 #importing fonts
 font_add_google(name = "Encode Sans", family = "Main")
 font_add_google(name = "Bree Serif", family = "alt")
@@ -102,6 +119,7 @@ dev.off()
 image_write(picture, path = here::here("Original Plot Work", "Migration Rate Maps", "Minor Areas", "pr.png"), format = "png")
 
 
+## N: RECREATED GRAPHIC
 
 #Creating map1
 map <- map_data("state")

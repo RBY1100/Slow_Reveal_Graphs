@@ -4,6 +4,22 @@ library(readxl)
 library(magick)
 library(grid)
 
+#
+# FILE:
+# Napoleon's Invasion of Russia.R
+#
+# DESCRIPTION:
+# This code is for the Napoleons Invasion of Russia map by Charles Mindard.  
+# The png shows the final map which could be turned into a slow reveal in the future while the river folder contains the river images needed to add the rivers to the map.  
+# Source: https://www.nealvonflue.com/wp-content/uploads/2018/04/Minard-napolean-chart3.jpg
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Great Vibes", family = "Main")
 font_add_google(name = "Charm", family = "Map")
@@ -26,6 +42,8 @@ dorg <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russ
 orsh <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Orsh.PNG"))
 bere <- image_read(here::here("Original Plot Work", "Napoleon's Invasion of Russia", "Rivers", "Bere.PNG"))
 
+
+## N: RECREATED GRAPHIC
 
 #Drawing the map
 img <- image_draw(picture)

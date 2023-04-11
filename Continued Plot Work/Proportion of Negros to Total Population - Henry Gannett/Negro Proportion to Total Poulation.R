@@ -1,8 +1,26 @@
-# https://www.loc.gov/resource/rbaapc.10601/?sp=10
-
-# setup
 library(tidyverse)
 library(showtext)
+
+#
+# FILE:
+#  Negro Proportaion to Total Population.R
+#
+# DESCRIPTION:
+# This code is for the Proportion of the Negro Element to the Total Population Graph from Henry Gannett. The png's show the various stages of revealing the graphs.
+# Most graph code was taken from Alex's work: https://github.com/gichukia/Slow-Reveal/blob/main/image%2010_2.R  
+# Source: https://www.loc.gov/resource/rbaapc.10601/?sp=10
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL YEAR
+#
+# AUTHORS:
+#   Alex & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
 
 # Loading the required fonts
 font_add_google("Dynalight", "Dynalight")
@@ -50,7 +68,7 @@ ggplot(df1, aes(x = percent, y = year)) +
 dev.off()
 
 
-## concealed
+# 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Proportion of Negros to Total Population - Henry Gannett", "1-Concealed-NT-Pop.png"),width=900,height=700)
 
@@ -83,41 +101,7 @@ ggplot(df1, aes(x = percent, y = year)) +
 dev.off()
 
 
-## Reveal Years
-
-png(here::here("Continued Plot Work", "Proportion of Negros to Total Population - Henry Gannett", "2-RevealYears-NT-Pop.png"),width=900,height=700)
-
-ggplot(df1, aes(x = percent, y = year)) +
-  geom_bar(stat = "identity", width = 0.4, fill = "gray21") +
-  scale_y_discrete(expand = c(0,0), limits = rev) +
-  scale_x_continuous(labels = x_axis_text, expand = c(0,0), position = "top",
-                     breaks = seq(0, 20, by = 10)) +
-  labs(title = "PLATE II.",
-       subtitle = "PROPORTION OF THE NEGRO ELEMENT TO THE TOTAL \nPOPULATION") +
-  geom_vline(xintercept = 0:20 , linetype = "solid", 
-             color = "gray21", size = 0.6) +
-  geom_vline(xintercept = c(10,20), linetype = "solid", 
-             color = "gray21", size = 1.2) +
-  labs(x = "Per Cent.", y = NULL) +
-  theme(plot.title = element_text(hjust = 1, face = "bold",family = "Puritan", colour = "white"),
-        plot.subtitle = element_text(hjust = 0.5, face = "bold", family = "Puritan", size = 15, color = "white"))+
-  theme(axis.text.x = element_text(colour = "white", 
-                                   face = "bold", family = "Dynalight", size = 13),
-        axis.text.y = element_text(colour = "gray21", 
-                                   face = "bold.italic", family = "Dynalight", size = 13)) +
-  theme(axis.ticks.y = element_blank(), 
-        axis.title.x = element_text(color = "white", family = "Puritan", hjust = 1)) + 
-  theme(panel.border = element_rect(fill = NA),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.background = element_rect(fill = "white", colour = "white"),
-        plot.background = element_rect(fill = "white", colour = "white"))
-
-dev.off()
-
-
-
-## Reveal Years
+# 2: REVEAL YEAR
 
 png(here::here("Continued Plot Work", "Proportion of Negros to Total Population - Henry Gannett", "2-RevealYears-NT-Pop.png"),width=900,height=700)
 

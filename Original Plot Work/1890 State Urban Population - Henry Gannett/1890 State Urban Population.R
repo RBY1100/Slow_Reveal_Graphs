@@ -5,6 +5,34 @@ library(grid)
 library(magick)
 library(srtools)
 
+#
+# FILE:
+# 1890 State Urban Population.R
+#
+# DESCRIPTION:
+# This code is for the 1890 State Urban/Rural Population Graph from Henry Gannett. The png's show the various stages of revealing the graphs.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=20&r=-0.05,0.712,0.811,0.515,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL DENSITY
+# 3: REVEAL STATE LABELS
+# 4: REVEAL YEAR
+# 5: REVEAL NEW YORK
+# 6: REVEAL NCA
+# 7: REVEAL TITLE
+# 8: REVEAL CAPTION
+# 9: REVEAL PI
+# 10: REVEAL LOW POPULATION
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
+
+
 #To install the srtools package, you will need to install the package from github:
 #
 #library(devtools)
@@ -27,7 +55,7 @@ data <- data %>%
              values_to = "Population")
 
 
-#11 Full Graph
+## N: RECREATED GRAPHIC
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -69,7 +97,7 @@ dev.off()
 image_write(picture, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "11-Final-State-Urban-Pop-1890.png"), format = "png")
 
 
-#1 Full Concealed
+## 1: FULLY CONCEALED GRAPHIC
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -105,7 +133,7 @@ dev.off()
 image_write(picture, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "1-Concealed-State-Urban-Pop-1890.png"), format = "png")
 
 
-#2 Reveal Population
+## 2: REVEAL POPULATION
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -143,7 +171,7 @@ dev.off()
 
 image_write(picture, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "2-RevealPop-State-Urban-Pop-1890.png"), format = "png")
 
-#3 Reveal States Label
+## 3: REVEAL STATE LABEL
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -183,7 +211,7 @@ dev.off()
 image_write(picture, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "3-RevealStatesLabel-State-Urban-Pop-1890.png"), format = "png")
 
 
-#4 Reveal Year
+## 4: REVEAL YEAR
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -226,7 +254,7 @@ polygon(c(50, 469, 469, 50), c(2, 2, 13, 13), border = "#f1d9b5", col = "#f1d9b5
  
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "4-RevealYear-State-Urban-Pop-1890.png"), format = "png")
 
-#5 Reveal New York
+## 5: REVEAL NEW YORK
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -269,7 +297,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "5-RevealNY-State-Urban-Pop-1890.png"), format = "png")
 
-#6 Reveal North Carolina and Alabama
+## 6: REVEAL NCA
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -314,7 +342,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "6-RevealNCA-State-Urban-Pop-1890.png"), format = "png")
 
-#7 Reveal Full Title
+## 7: REVEAL TITLE
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -358,7 +386,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "7-RevealTitle-State-Urban-Pop-1890.png"), format = "png")
 
-#8 Reveal Caption
+## 8: REVEAL CAPTION
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -405,7 +433,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "8-RevealCaption-State-Urban-Pop-1890.png"), format = "png")
 
-#9 Reveal Pennsylvania and Illinois
+## 9: REVEAL PI
 
 picture <- image_graph(width = 600, height = 700)
 
@@ -452,7 +480,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "1890 State Urban Population - Henry Gannett", "9-RevealPI-State-Urban-Pop-1890.png"), format = "png")
 
-#10 Reveal Lowest Population States
+## 10: REVEAL LOW POPULATION
 
 picture <- image_graph(width = 600, height = 700)
 

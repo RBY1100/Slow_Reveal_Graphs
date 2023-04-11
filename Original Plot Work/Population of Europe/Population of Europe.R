@@ -2,6 +2,22 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Population of Europe.R
+#
+# DESCRIPTION:
+# This code is for the Population of Europe graph by Du Bois. The png shows the final recreated graph.  
+# Source: https://blogs.scientificamerican.com/sa-visual/w-e-b-du-bois-scientific-american-and-data-stories-of-the-early-1900s/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Lato", family = "alt")
 showtext_auto()
 
@@ -26,6 +42,8 @@ pie_data %>% ggplot(aes(x="",y=value))+
         plot.background = element_rect(color = "#d7d2bf", fill = "#d7d2bf"))
 dev.off()
 
+
+## N: RECREATED GRAPHIC
 
 img <- image_draw(picture)
 

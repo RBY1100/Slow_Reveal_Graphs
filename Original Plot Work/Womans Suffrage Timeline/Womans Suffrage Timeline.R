@@ -6,6 +6,22 @@ library(mapview)
 library(readxl)
 library(magick)
 
+#
+# FILE:
+# Womans Suffrage Timeline.R
+#
+# DESCRIPTION:
+# This code is for the Population of Europe graph by Du Bois. The png shows the final recreated graph.  
+# Source: https://blogs.scientificamerican.com/sa-visual/w-e-b-du-bois-scientific-american-and-data-stories-of-the-early-1900s/
+#
+# SLOW REVEAL ORDER:
+#   
+# 1-27: Changing States to Blue w/ Names
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 mapStates <- map("state", fill = TRUE, plot = FALSE)
 
 

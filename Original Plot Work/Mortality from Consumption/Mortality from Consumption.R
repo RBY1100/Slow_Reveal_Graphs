@@ -4,6 +4,22 @@ library(readxl)
 library(ggpubr)
 library(magick)
 
+#
+# FILE:
+# Mortality from Consumption.R
+#
+# DESCRIPTION:
+# This code is for the Mortality From Consumption graph by Du Bois. The png shows the final recreated graph.  
+# Source: https://blogs.scientificamerican.com/sa-visual/w-e-b-du-bois-scientific-american-and-data-stories-of-the-early-1900s/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Cagliostro", family = "Main")
 showtext_auto()
 
@@ -167,6 +183,8 @@ dev.off()
 
 original <- image_read(here::here("Original Plot Work", "Mortality from Consumption", "Mortality from Consumption.png"))
 
+
+## N: RECREATED GRAPHIC
 
 img <- image_draw(original)
 

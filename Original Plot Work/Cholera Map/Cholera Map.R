@@ -3,6 +3,23 @@ library(showtext)
 library(magick)
 library(showtext)
 
+#
+# FILE:
+# Cholera Map.R
+#
+# DESCRIPTION:
+# This code is for the John Snow Cholera Map from UCLA.  
+# The png shows the final map which could be turned into a slow reveal in the future.  
+# Source: https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Roboto Mono", family = "Main")
 showtext_auto()
 
@@ -11,6 +28,9 @@ gap <- ggplot() + theme_void()
 picture <- image_graph(width = 1000, height = 1000)
 gap 
 dev.off()
+
+
+## N: RECREATED GRAPHIC
 
 img <- image_draw(picture)
 

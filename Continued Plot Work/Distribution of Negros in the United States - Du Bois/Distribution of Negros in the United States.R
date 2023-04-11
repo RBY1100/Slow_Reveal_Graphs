@@ -1,7 +1,3 @@
-# https://www.loc.gov/resource/ppmsca.33900/
-
-
-# setup
 library(maps)
 library(mapdata)
 library(ggplot2)
@@ -11,6 +7,27 @@ library(readxl)
 library(ggforce)
 library(cowplot)
 
+#
+# FILE:
+#  Distribution of Negros in the United States.R
+#
+# DESCRIPTION:
+# This code is for the Distribution of Negros in the United States map from Du Bois. The png's show the various stages of revealing the graphs.  
+# Most graph code was taken from Alex's work: https://github.com/gichukia/Slow-Reveal/blob/main/MO-OK%20split%20map%20Slow%20Reveal.R  
+# Source: https://www.loc.gov/resource/ppmsca.33900/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL CIRCLES
+# 3: REVEAL LABELS
+#
+# AUTHORS:
+#   Alex & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
 
 # fonts
 font_add_google("Puritan", "Puritan")
@@ -343,7 +360,7 @@ plot_grid(LegendPlot3, MapPlot,
 dev.off()
 
 
-#Concealed Graph
+## FIGURE 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Distribution of Negros in the United States - Du Bois", "1-Concealed-DistN.png"),width=800,height=1000)
 
@@ -375,7 +392,7 @@ plot_grid(LegendPlot3, MapPlot,
 dev.off()
 
 
-#Reveal Circles
+## FIGURE 2: REVEAL CIRCLES
 
 png(here::here("Continued Plot Work", "Distribution of Negros in the United States - Du Bois", "2-RevealCircles-DistN.png"),width=800,height=1000)
 
@@ -412,7 +429,7 @@ plot_grid(LegendPlot3, MapPlot,
 dev.off()
 
 
-#Reveal Label
+## FIGURE 3: REVEAL LABELS
 
 png(here::here("Continued Plot Work", "Distribution of Negros in the United States - Du Bois", "3-RevealLabel-DistN.png"),width=800,height=1000)
 

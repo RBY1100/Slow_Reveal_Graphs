@@ -2,6 +2,21 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Number of Natives of Canada.R
+#
+# DESCRIPTION:
+# This code is for the 1890 Number of Natives from Canada and Newfoundland Graph from Henry Gannett. The png shows the final graph.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=34&r=-0.576,-0.039,2.152,1.42,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#  Robert Bilyk
+#
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -13,6 +28,8 @@ data <- data.frame(state=c("MASSACHUSETTS","MICHIGAN","NEW YORK","MAINE","NEW HA
                    count=c(2.1,1.8,.9,.55,.48,.47,.45,.4,.38,.36,.34,.32,.3,.28,.26,.24,.16,.15,.14))
 data$count <- data$count * 100000
 
+
+## N: RECREATED GRAPHIC
 
 picture <- image_graph(width =300, height=400)
 

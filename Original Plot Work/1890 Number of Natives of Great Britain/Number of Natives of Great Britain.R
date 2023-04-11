@@ -2,6 +2,21 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Number of Natives of Great Britain.R
+#
+# DESCRIPTION:
+# This code is for the 1890 Number of Natives from Great Britain Graph from Henry Gannett. The png shows the final graph.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=34&r=-0.576,-0.039,2.152,1.42,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#  Robert Bilyk
+#
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -13,6 +28,8 @@ data <- data.frame(state=c("PENNSYLVANNIA","NEW YORK","MASSACHUSETTS","ILLNOIS",
                    count=c(1.95,1.85,1,.95,.75,.7,.65,.48,.4,.399,.3,.29,.28,.27,.26,.2,.19,.17,.15,.14,.1))
 data$count <- data$count * 100000
 
+
+## N: RECREATED GRAPHIC
 
 picture <- image_graph(width =300, height=400)
 

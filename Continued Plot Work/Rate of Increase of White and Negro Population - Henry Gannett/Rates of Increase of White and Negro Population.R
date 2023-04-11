@@ -1,12 +1,34 @@
 # Gannett vs Dubois: Rates of Increase
 
-# https://www.loc.gov/resource/rbaapc.10601/?sp=9
-
 # setup
 library(ggplot2)
 library(tidyverse)
 library(ggalt)
 library(showtext)
+
+
+#
+# FILE:
+#  Rates of Increase of White and Negro Population.R
+#
+# DESCRIPTION:
+# This code is for the Rates of Increase of White and Negro Population Graph from Henry Gannett. The png's show the various stages of revealing the graphs.  
+# Most graph code was taken from Alex's work: https://github.com/gichukia/Slow-Reveal/blob/main/image%209%20Slow%20Reveal.R  
+# Source: https://www.loc.gov/resource/rbaapc.10601/?sp=9
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL YEAR
+# 3: REVEAL PERCENTS1
+# 4: REVEAL PERCENTS2
+#
+# AUTHORS:
+#   Alex & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
 
 # loading fonts
 font_add_google("Dynalight", "Dynalight")
@@ -28,9 +50,6 @@ spline_int2 <- as.data.frame(spline(df$years, df$negro))
 x_axis_text <- c("1790-1800", "1800-1810", "1810-1820", "1820-1830", "1830-1840", 
                  "1840-1840", "1850-1860", "1860-1870", "1870-1880", "1880-1890")
 
-
-
-#Final Graph
 
 png(here::here("Continued Plot Work", "Rate of Increase of White and Negro Population - Henry Gannett", "5-Final-IncreaseWN-Pop.png"),width=1200,height=600)
 
@@ -68,7 +87,7 @@ ggplot(df) +
 dev.off()
 
 
-#Concealed
+## FIGURE 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Rate of Increase of White and Negro Population - Henry Gannett", "1-Concealed-IncreaseWN-Pop.png"),width=1200,height=600)
 
@@ -104,7 +123,7 @@ ggplot(df) +
 dev.off()
 
 
-#Reveal Years
+## FIGURE 2: REVEAL YEARS
 
 png(here::here("Continued Plot Work", "Rate of Increase of White and Negro Population - Henry Gannett", "2-RevealYears-IncreaseWN-Pop.png"),width=1200,height=600)
 
@@ -140,7 +159,7 @@ ggplot(df) +
 dev.off()
 
 
-#Reveal Percent
+## FIGURE 3: REVEAL PERCENTS1
 
 png(here::here("Continued Plot Work", "Rate of Increase of White and Negro Population - Henry Gannett", "3-RevealPercent-IncreaseWN-Pop.png"),width=1200,height=600)
 
@@ -176,7 +195,7 @@ ggplot(df) +
 dev.off()
 
 
-#Reveal Percent
+## FIGURE 4: REVEAL PERCENTS2
 
 png(here::here("Continued Plot Work", "Rate of Increase of White and Negro Population - Henry Gannett", "4-RevealColored-IncreaseWN-Pop.png"),width=1200,height=600)
 

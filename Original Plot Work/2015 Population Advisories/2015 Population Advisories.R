@@ -3,6 +3,29 @@ library(magick)
 library(ggpubr)
 library(showtext)
 
+#
+# FILE:
+# 2015 Population Advisories.R
+#
+# DESCRIPTION:
+# This code is for Long-term Drinking Water Advisories Graph from the Human Rights Watch. The png's include  
+# different graphs for the slow reveal.  
+# Source: https://www.hrw.org/report/2016/06/07/make-it-safe/canadas-obligation-end-first-nations-water-crisis
+#
+# SLOW REVEAL ORDER:
+#   
+# 6: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL XAXIS
+# 3: REVEAL YAXIS
+# 4a: REVEAL TITLE OPT1
+# 4b: REVEAL TITLE OPT2
+# 5: REVEAL TITLE
+# 7: ORIGINAL GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Barlow Condensed", family = "Circle")
 showtext_auto()
@@ -20,7 +43,7 @@ data$Type <- as.factor(data$Type)
 
 
 
-#Final Graph
+## 6: RECREATED GRAPHIC
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, color=Type, alpha = .5, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -72,7 +95,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#First  Graph
+## 1: FULLY CONCEALED GRAPHIC
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -118,7 +141,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Second  Graph
+## 2: REVEAL XAXIS
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -166,7 +189,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Third  Graph
+## 3: REVEAL YAXIS
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -212,7 +235,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Fourth  Graph A
+## 4a: REVEAL TITLE OPT1
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -258,7 +281,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Fourth  Graph B
+## 4b: REVEAL TITLE OPT2
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -304,7 +327,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Fifth  Graph
+## 5: REVEAL TITLE
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, alpha = .3, size=1.75)) +
   labs(title = "Long-term Drinking Water Advisories",
@@ -350,7 +373,7 @@ image_write(img, path = here::here("Original Plot Work", "2015 Population Adviso
 
 
 
-#Original Graph
+## 7: ORIGINAL GRAPHIC
 
 graph <- ggplot(data=data) + geom_point(aes(x=Length, y=Population, color=Type, alpha = .5, size=1.75)) +
   labs(title = "2015 advisories",

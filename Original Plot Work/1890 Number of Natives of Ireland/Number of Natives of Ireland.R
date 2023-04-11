@@ -2,6 +2,21 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Number of Natives of Ireland.R
+#
+# DESCRIPTION:
+# This code is for the 1890 Number of Native from Ireland Graph from Henry Gannett. The png shows the final graph.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=34&r=-0.576,-0.039,2.152,1.42,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#  Robert Bilyk
+#
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -13,6 +28,8 @@ data <- data.frame(state=c("NEW YORK","MASSACHUSETTS","PENNSYLVANIA","ILLINOIS",
                    count=c(4.8,2.6,2.4,1.25,1,.75,.7,.65,.45,.44,.43,.42,.41,.38,.25,.24,.23,.22,.21,.2,.19,.18))
 data$count <- data$count * 100000
 
+
+## N: RECREATED GRAPHIC
 
 picture <- image_graph(width =600, height=500)
 

@@ -2,6 +2,22 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Nativity of the Foreign Born Population.R
+#
+# DESCRIPTION:
+# This code is for the 1890 Nativity of the Foreign Born Population Graph from Henry Gannett. The png shows the final graph.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=34&r=-0.576,-0.039,2.152,1.42,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#  Robert Bilyk
+#
+
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -12,6 +28,8 @@ data <- data.frame(country=c("GERMANY","IRELAND","CANADA","ENGLAND","SWEDEN","NO
                              "BOHEMIA","FRANCE","CHINA","SWITZERLAND","WALES"),
                    count=c(28,19,10,9,5,3,2.5,2,1.9,1.2,1.1,1,.9,.8,.7,.6,.5))
 
+
+## FIGURE N: RECREATED GRAPHIC
 
 picture <- image_graph(width =500, height=600)
 

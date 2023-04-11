@@ -3,6 +3,24 @@ library(showtext)
 library(readxl)
 library(grid)
 
+#
+# FILE:
+# 1890 State Population Density.R
+#
+# DESCRIPTION:
+# This code is for the 1890 State Population Density Graph from Henry Gannett. The png's show the various stages of revealing the graphs.
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=11&r=-0.031,0.456,1.866,1.186,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL DENSITY
+# 3: REVEAL STATES
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -12,7 +30,7 @@ data <- read_xlsx(here::here("Original Plot Work", "1890 State Population Densit
 
 data$State <- toupper(data$State)
 
-#Final Graph
+## N: RECREATED GRAPHIC
 
 png(here::here("Original Plot Work", "1890 State Population Density - Henry Gannett", "4-Final-State-Pop-Density-1890.png"),width=500,height=800)
 
@@ -43,7 +61,7 @@ grid.draw(textGrob("8. NUMBER OF INHABITANTS TO THE SQUARE MILE, BY STATES AND T
 
 dev.off()
 
-#Concealed Graph
+## 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Original Plot Work", "1890 State Population Density - Henry Gannett", "1-Concealed-State-Pop-Density-1890.png"),width=500,height=800)
 
@@ -70,7 +88,7 @@ grid.draw(segmentsGrob(x0 = 0.242, x1 = 0.977, y0 = 0.012, y1 = 0.012))
 
 dev.off()
 
-#Reveal Density Numbers
+## 2: REVEAL DENSITY
 
 png(here::here("Original Plot Work", "1890 State Population Density - Henry Gannett", "2-DensityReveal-State-Pop-Density-1890.png"),width=500,height=800)
 
@@ -98,7 +116,7 @@ grid.draw(segmentsGrob(x0 = 0.241, x1 = 0.977, y0 = 0.012, y1 = 0.012))
 
 dev.off()
 
-#Reveal States
+## 3: REVEAL STATES
 
 png(here::here("Original Plot Work", "1890 State Population Density - Henry Gannett", "3-StateReveal-State-Pop-Density-1890.png"),width=500,height=800)
 

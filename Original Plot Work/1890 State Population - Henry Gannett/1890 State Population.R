@@ -3,6 +3,25 @@ library(showtext)
 library(readxl)
 library(grid)
 
+#
+# FILE:
+# 1890 State Population.R
+#
+# DESCRIPTION:
+# This code is for the 1890 State Population Graph from Henry Gannett. The png's show the various stages of revealing the graphs.  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=11&r=-0.031,0.456,1.866,1.186,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL POPULATION
+# 3: REVEAL STATES
+# 4: REVEAL UNITS
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Courier Prime", family = "Main")
 showtext_auto()
@@ -14,7 +33,7 @@ data$State <- toupper(data$State)
 data$pop <- data$Population / 100000
 
 
-#Full Graph
+## N: RECREATED GRAPHIC
 
 png(here::here("Original Plot Work", "1890 State Population - Henry Gannett", "5-Final-State-Pop-1890.png"),width=500,height=800)
 
@@ -48,7 +67,7 @@ grid.draw(textGrob("STATES.", x=.13,y=.954, gp=gpar(fontsize=8, fontfamily="Main
 
 dev.off()
 
-#Fully Concealed
+## 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Original Plot Work", "1890 State Population - Henry Gannett", "1-Concealed-State-Pop-1890.png"),width=500,height=800)
 
@@ -79,7 +98,7 @@ grid.draw(segmentsGrob(x0 = 0.243, x1 = 0.95, y0 = 0.012, y1 = 0.012))
 
 dev.off()
 
-#Reveal Population Numbers
+## 2: REVEAL POPULATION
 
 png(here::here("Original Plot Work", "1890 State Population - Henry Gannett", "2-Pop-Reveal-State-Pop-1890.png"),width=500,height=800)
 
@@ -111,7 +130,7 @@ grid.draw(segmentsGrob(x0 = 0.243, x1 = 0.95, y0 = 0.012, y1 = 0.012))
 
 dev.off()
 
-#Add States
+## 3: REVEAL STATES
 
 png(here::here("Original Plot Work", "1890 State Population - Henry Gannett", "3-State-Reveal-State-Pop-1890.png"),width=500,height=800)
 
@@ -145,7 +164,7 @@ grid.draw(textGrob("STATES.", x=.13,y=.954, gp=gpar(fontsize=8, fontfamily="Main
 
 dev.off()
 
-# Add Units
+## 4: REVEAL UNITS
 
 png(here::here("Original Plot Work", "1890 State Population - Henry Gannett", "4-Unit-Reveal-State-Pop-1890.png"),width=500,height=800)
 

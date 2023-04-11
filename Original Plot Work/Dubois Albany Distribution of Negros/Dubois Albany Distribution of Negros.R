@@ -2,6 +2,21 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# Dubois Albany Distribution of Negros.R
+#
+# DESCRIPTION:
+# This code is for the Distribution of Negros in Albany from Dubois. The png shows the final image.
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Barlow Condensed", family = "Circle")
 font_add_google(name = "Cutive Mono", family = "Main")
 font_add_google(name = "Dancing Script", family = "Descriptor")
@@ -19,6 +34,7 @@ gap
 
 dev.off()
 
+## N: RECREATED GRAPHIC
 
 img <- image_draw(picture)
 segments(x0=172,y0=33, x1=852, y1=33, lwd = 1, lty = "solid")

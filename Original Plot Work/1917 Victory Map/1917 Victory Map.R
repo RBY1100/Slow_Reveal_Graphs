@@ -7,6 +7,23 @@ library(maps)
 library(mapdata)
 library(stringr)
 
+#
+# FILE:
+# 1917 Victory Map.R
+#
+# DESCRIPTION:
+# This code is for the Victory Map of 1917 from the National American Woman Suffrage Association Collection.  
+# The png shows the final map which could be turned into a slow reveal in the future.  
+# Source: https://www.loc.gov/resource/rbnawsa.n7111/?sp=26
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "PT Serif", family = "Title")
 font_add_google(name = "Averia Serif Libre", family = "Main")
 showtext_auto()
@@ -40,7 +57,7 @@ newmap$Type <- newmap$Type %>%
 #in the ggpattern directory the path is "R/x86_64-pc-linux-gnu-library/4.1/ggpattern/img"
 
 
-#Final Map
+## N: RECREATED GRAPHIC
 
 png(here::here("Original Plot Work", "1917 Victory Map", "Victory_Map.png"),width=900,height=600)
 

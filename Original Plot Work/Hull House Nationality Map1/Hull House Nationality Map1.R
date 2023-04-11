@@ -2,6 +2,23 @@ library(tidyverse)
 library(showtext)
 library(magick)
 
+#
+# FILE:
+# HULL HOUSE NATIONALITY MAP1.R
+#
+# DESCRIPTION:
+# This code is for the Hull House Nationality Map of a section of Chicago by Florence Kelley.  
+# The png shows the final map which could be turned into a slow reveal in the future while the key folder contains color key for the specific colors in the code.  
+# Source: https://homicide.northwestern.edu/docs_fk/homicide/HullHouse/NATMAP1.pdf  
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Space Mono", family = "Text")
 font_add_google(name = "Cutive Mono", family = "Main")
 
@@ -17,6 +34,8 @@ gap
 
 dev.off()
 
+
+## N: RECREATED GRAPHIC
 
 img <- image_draw(picture)
 

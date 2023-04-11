@@ -1,8 +1,25 @@
-# Special Request from Tammy based on Image 10_1 using 1900-1970 data
-
-#setup
 library(tidyverse)
 library(showtext)
+
+#
+# FILE:
+# Total White and Black Population.R
+#
+# DESCRIPTION:
+# This code is the Total White and Black Population from 1900 to 1970. The png's show the various stages of revealing the graphs.  
+# Most graph code was taken from Alex's work: https://github.com/gichukia/Slow-Reveal/blob/main/1900-1970.R
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL POPULATION
+#
+# AUTHORS:
+#   Alex & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
 
 # Loading required fonts
 font_add_google("Dynalight", "Dynalight")
@@ -32,8 +49,6 @@ zero <- c(.01, .02, .03, .04, .05, .06, .07, .08)
 
 df2 <- data.frame(year2, value2, zero)
 
-
-# final graph
 
 png(here::here("Continued Plot Work", "Total White and Black Population", "3-Final-TotalWB-Pop.png"),width=1000,height=600)
 
@@ -70,7 +85,7 @@ ggplot(df, aes(fill = condition, x = value, y = reorder(year, -value)))  +
 dev.off()
 
 
-# concealed graph
+## FIGURE 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Total White and Black Population", "1-Concealed-TotalWB-Pop.png"),width=1000,height=600)
 
@@ -108,7 +123,7 @@ ggplot(df2, aes(x = zero, y = reorder(year2, -zero)))  +
 dev.off()
 
 
-# concealed graph
+## FIGURE 2: REVEAL POPULATION
 
 png(here::here("Continued Plot Work", "Total White and Black Population", "2-RevealPop-TotalWB-Pop.png"),width=1000,height=600)
 

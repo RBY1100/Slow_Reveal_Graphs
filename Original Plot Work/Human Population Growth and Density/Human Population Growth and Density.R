@@ -5,6 +5,26 @@ library(grid)
 library(magick)
 library(ggpubr)
 
+#
+# FILE:
+# Human Population Growth and Density.R
+#
+# DESCRIPTION:
+# This code is for the Human Population Growth and Density graph and map from Global Education   
+# Project Earth. The png's include different graphs for the slow reveal.  
+# Source: https://www.theglobaleducationproject.org/earth/global-ecology/human-population-growth-by-region
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL YEAR
+# 3: REVEAL POPULATION
+# 4: REVEAL MAP
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Roboto Slab", family = "Main")
 font_add_google(name = "PT Sans Narrow", regular.wt=700, family = "Title")
@@ -16,7 +36,7 @@ world <- read_xlsx(here::here("Original Plot Work", "Human Population Growth and
 world$Region <- world$Region %>%
   factor(levels = c("world", "asia", "africa", "europe", "lam", "nam", "oceania"))
 
-#Final Graph 
+## N: RECREATED GRAPHIC
 
 graph <- ggplot(world, aes(x=Year, y=Rate, group=Region))+
   geom_line(aes(color=Region)) + 
@@ -171,7 +191,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Human Population Growth and Density", "5 Human Population Growth and Density.png"), format = "png")
 
-#First Image
+## 1: FULLY CONCEALED GRAPHIC
 
 graph <- ggplot(world, aes(x=Year, y=Rate, group=Region))+
   geom_line(aes(color=Region)) + 
@@ -270,7 +290,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Human Population Growth and Density", "1 Human Population Growth and Density.png"), format = "png")
 
-#Second Image
+## 2: REVEAL YEAR
 
 graph <- ggplot(world, aes(x=Year, y=Rate, group=Region))+
   geom_line(aes(color=Region)) + 
@@ -380,7 +400,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Human Population Growth and Density", "2 Human Population Growth and Density.png"), format = "png")
 
-#Third Image
+## 3: REVEAL POPULATION
 
 graph <- ggplot(world, aes(x=Year, y=Rate, group=Region))+
   geom_line(aes(color=Region)) + 
@@ -520,7 +540,7 @@ dev.off()
 
 image_write(img, path = here::here("Original Plot Work", "Human Population Growth and Density", "3 Human Population Growth and Density.png"), format = "png")
 
-#Fourth Image
+## 4: REVEAL MAP
 
 graph <- ggplot(world, aes(x=Year, y=Rate, group=Region))+
   geom_line(aes(color=Region)) + 

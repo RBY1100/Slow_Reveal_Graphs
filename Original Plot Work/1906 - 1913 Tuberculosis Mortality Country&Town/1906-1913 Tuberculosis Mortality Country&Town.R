@@ -4,6 +4,21 @@ library(readxl)
 library(grid)
 library(ggpubr)
 
+#
+# FILE:
+# 1906-1913 Tuberculosis Mortality Country&Town.R
+#
+# DESCRIPTION:
+# This code is from a 1918 Red Cross Report. The png shows the final recreation of the graph.  
+# Source: https://www.loc.gov/resource/anrc.16954/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
 
 font_add_google(name = "Cagliostro", family = "Main")
 showtext_auto()
@@ -29,6 +44,7 @@ countryplot <- ggplot(country) +
   scale_linetype_manual(values = c("solid", "longdash", "twodash")) +
   scale_size_manual(values = c(1.5, 1.5, 1.5))
 
+# N: RECREATED GRAPHIC
 
 
 town <- read_xlsx(here::here("Original Plot Work", "1906 - 1913 Tuberculosis Mortality Country&Town", "Tuberculosis Towns.xlsx")) 

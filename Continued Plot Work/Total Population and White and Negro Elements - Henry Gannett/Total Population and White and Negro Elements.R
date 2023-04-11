@@ -1,9 +1,28 @@
-# https://www.loc.gov/resource/rbaapc.10601/?sp=10
-
-
-#setup
 library(tidyverse)
 library(showtext)
+
+#
+# FILE:
+# Total Population and White and Negro Elements.R
+#
+# DESCRIPTION:
+# This code is for the Proportion of the Total Population and White and Negro Elements Graph from Henry Gannett. The png's show the various stages of revealing the graphs. 
+# Most graph code was taken from Alex's work: https://github.com/gichukia/Slow-Reveal/blob/main/image%2010_1.R  
+# Source: https://www.loc.gov/resource/rbaapc.10601/?sp=10  
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL POPULATION
+# 3: REVEAL YEAR
+# 4: REVEAL TITLE
+#
+# AUTHORS:
+#   Alex & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
 
 # Required fonts
 font_add_google("Dynalight", "Dynalight")
@@ -35,8 +54,6 @@ df2 <- data.frame(year2, value2)
 x_axis_text <- c("", 0, 10, 20, 30, 40, 50, 60, "")
 
 
-
-# full graph
 
 png(here::here("Continued Plot Work", "Total Population and White and Negro Elements - Henry Gannett", "5-Final-TotalPWN-Pop.png"),width=900,height=700)
 
@@ -73,7 +90,7 @@ ggplot(df, aes(fill = condition, x = value, y = reorder(year, -value)))  +
 dev.off()
 
 
-# full concealed
+## FIGURE 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Total Population and White and Negro Elements - Henry Gannett", "1-Concealed-TotalPWN-Pop.png"),width=900,height=700)
 
@@ -111,7 +128,7 @@ ggplot(df2, aes(x = value2, y = reorder(year2, -value2), fill="white"))  +
 dev.off()
 
 
-# reveal population
+## FIGURE 2: REVEAL POPULATION
 
 png(here::here("Continued Plot Work", "Total Population and White and Negro Elements - Henry Gannett", "2-RevealPop-TotalPWN-Pop.png"),width=900,height=700)
 
@@ -149,7 +166,7 @@ ggplot(df2, aes(x = value2, y = reorder(year2, -value2), fill="white"))  +
 dev.off()
 
 
-# reveal year
+## FIGURE 3: REVEAL YEAR
 
 png(here::here("Continued Plot Work", "Total Population and White and Negro Elements - Henry Gannett", "3-RevealYear-TotalPWN-Pop.png"),width=900,height=700)
 
@@ -187,7 +204,7 @@ ggplot(df2, aes(x = value2, y = reorder(year2, -value2), fill="white"))  +
 dev.off()
 
 
-# reveal title
+## FIGURE 4: REVEAL TITLE
 
 png(here::here("Continued Plot Work", "Total Population and White and Negro Elements - Henry Gannett", "4-RevealTitle-TotalPWN-Pop.png"),width=900,height=700)
 

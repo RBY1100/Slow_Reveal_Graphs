@@ -8,6 +8,23 @@ library(ggpubr)
 library(magick)
 library(grid)
 
+#
+# FILE:
+# Migration by State.R
+#
+# DESCRIPTION:
+# This code is for Migration by State Graph from the U.S. Census Bureau. The png's include  
+# different graphs being created into the final png.  
+# Source: https://www.census.gov/content/dam/Census/library/publications/2007/dec/7_migration.pdf (page 6)
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 #importing fonts
 font_add_google(name = "Barlow Condensed", family = "Circle")
 font_add_google(name = "Roboto", regular.wt = 300, family = "Main")
@@ -105,6 +122,7 @@ hawaii <- image_read(here::here("Original Plot Work", "Migration by State", "Min
 pr <- image_read(here::here("Original Plot Work", "Migration by State", "Minor Areas", "pr.png"))
 
 
+## N: RECREATED GRAPHIC
 
 #combining all images together and adding text
 img <- image_draw(original)

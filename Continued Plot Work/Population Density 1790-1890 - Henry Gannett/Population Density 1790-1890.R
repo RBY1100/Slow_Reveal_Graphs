@@ -2,6 +2,28 @@ library(tidyverse)
 library(showtext)
 library(srtools)
 
+#
+# FILE:
+#  Population Density 1790-1890.R
+#
+# DESCRIPTION:
+# This code is for the State Population Density by Year Graph from Henry Gannett. The pngs show the graphs in various stages of slow reveal.  
+# Most graph code was taken from Connor's work: https://github.com/connormcnamee/1890-Population-Density/blob/main/Inhabitants_Per_Sq_Mile.R  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=8&r=0.858,0.601,0.58,0.913,1
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL DENSITY
+# 3: REVEAL YEAR
+#
+# AUTHORS:
+#   Connor & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
+
 font_add_google("Puritan", "Puritan")
 showtext_auto()
 
@@ -15,8 +37,6 @@ Mod_Total_Population <- Population_Density %>%
   mutate(New_censuses = as.character(Censuses)) %>% 
   select(New_censuses, Density)
 
-
-#Final Graph
 
 png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "4-Final-PopulationDensity.png"), width=420,height=550)
     
@@ -48,7 +68,7 @@ ggplot(Mod_Total_Population) +
 dev.off()
 
 
-#Concealed Graph
+## FIGURE 1: FULLY CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "1-Concealed-PopulationDensity.png"), width=420,height=550)
 
@@ -83,7 +103,7 @@ ggplot(Mod_Total_Population) +
 dev.off()
 
 
-#Reveal Year
+## FIGURE 2: REVEAL YEAR
 
 png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "2-YearReveal-PopulationDensity.png"), width=420,height=550)
 
@@ -118,7 +138,7 @@ ggplot(Mod_Total_Population) +
 dev.off()
 
 
-#Reveal Density
+## FIGURE 3: REVEAL DENSITY
 
 png(here::here("Continued Plot Work", "Population Density 1790-1890 - Henry Gannett", "3-DensityReveal-PopulationDensity.png"), width=420,height=550)
 

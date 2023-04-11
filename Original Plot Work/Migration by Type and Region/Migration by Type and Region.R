@@ -3,6 +3,23 @@ library(magick)
 library(ggpubr)
 library(showtext)
 
+#
+# FILE:
+# Migration by Type and Region.R
+#
+# DESCRIPTION:
+# This code is for Migration Type Graph by State from the U.S. Census Bureau. The png's include  
+# different graphs being created into the final png named "Migration by Type and Region.png".  
+# Source: https://www.census.gov/content/dam/Census/library/publications/2007/dec/7_migration.pdf (page 4)
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 #Importing Fonts
 font_add_google(name = "Roboto", regular.wt = 900, family = "Main")
 font_add_google(name = "Roboto", regular.wt = 100, family = "Alt")
@@ -19,6 +36,8 @@ data <- data.frame(region = c('Northeast', 'Midwest', 'South', 'West', 'Northeas
 
 data$region <- factor(data$region, levels = c("Northeast", "Midwest", "South", 'West'))
 
+
+## N: RECREATED GRAPHIC
 
 #Creating Graphs
 graph <- ggplot(data, aes(fill=type, y=count, x=region)) + 

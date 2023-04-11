@@ -8,6 +8,31 @@ library(magick)
 library(showtext)
 library(grid)
 
+#
+# FILE:
+# Domestication of Animals.R
+#
+# DESCRIPTION:
+# This code is for the Domestication of Animals Graph from Visual Capitalist. The png's include  
+# different graphs for the slow reveal.  
+# Source: https://www.visualcapitalist.com/the-domestication-of-animals/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL 15000
+# 3: REVEAL MORE DATES
+# 4: REVEAL CENTER
+# 5: REVEAL MORE ANIMALS
+# 6: REVEAL ICONS1
+# 7: REVEAL ICONS2
+# 8: REVEAL BOTTOM
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
 font_add_google(name = "Roboto", regular.wt=700, family = "bold")
 font_add_google(name = "Roboto", regular.wt=300, family = "skinny")
 font_add_google(name = "PT Serif", regular.wt=700, family = "titles")
@@ -163,6 +188,7 @@ icons <- image_read(here::here("Original Plot Work", "Domestication of Animals",
 source <- image_read(here::here("Original Plot Work", "Domestication of Animals", "Images", "source.png"))
 
 
+## N: RECREATED GRAPHIC
 
 img <- image_draw(original)
 
@@ -414,6 +440,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "9 Domestication of Animals.png"), format = "png")
 
 
+## 1: FULLY CONCEALED GRAPHIC
 
 img <- image_draw(original1)
 
@@ -530,8 +557,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "1 Domestication of Animals.png"), format = "png")
 
 
-
-
+## 2: REVEAL 15000
 
 img <- image_draw(original1)
 
@@ -650,8 +676,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "2 Domestication of Animals.png"), format = "png")
 
 
-
-
+## 3:REVEAL MORE DATES
 
 img <- image_draw(original1)
 
@@ -804,6 +829,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "3 Domestication of Animals.png"), format = "png")
 
 
+## 4: REVEAL CENTER
 
 img <- image_draw(original)
 
@@ -959,9 +985,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "4 Domestication of Animals.png"), format = "png")
 
 
-
-
-
+## 5: REVEAL MORE ANIMALS
 
 img <- image_draw(original)
 
@@ -1152,7 +1176,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "5 Domestication of Animals.png"), format = "png")
 
 
-
+## 6: REVEAL ICONS1
 
 img <- image_draw(original)
 
@@ -1345,10 +1369,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "6 Domestication of Animals.png"), format = "png")
 
 
-
-
-
-
+## 7: REVEAL ICONS2
 
 img <- image_draw(original)
 
@@ -1553,8 +1574,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "Domestication of Animals", "7 Domestication of Animals.png"), format = "png")
 
 
-
-
+## 8: REVEAL BOTTOM
 
 img <- image_draw(original)
 

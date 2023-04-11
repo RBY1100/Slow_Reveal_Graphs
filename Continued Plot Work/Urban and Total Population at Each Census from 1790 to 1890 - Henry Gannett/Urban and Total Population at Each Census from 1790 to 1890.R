@@ -1,6 +1,27 @@
 library(tidyverse)
 library(showtext)
 
+
+#
+# FILE:
+# Urban and Total Population at Each Census from 1790 to 1890.R
+#
+# DESCRIPTION:
+# This code is for the Urban and Total Population by Census Graph from Henry Gannett. The png's show the various stages of revealing the graphs.  
+# Most graph code was taken from Connor's work: https://github.com/connormcnamee/1890-Population-Density/blob/main/Urban_Population.R  
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=8&r=-0.174,0.457,1.303,0.828,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL POPULATION
+# 3: REVEAL YEAR
+#
+# AUTHORS:
+#   Connor & Robert Bilyk
+#
+
 font_add_google("Puritan", "Puritan")
 showtext_auto()
 
@@ -46,7 +67,8 @@ Ext_Pop_Graph <- Ext_Pop_Density %>%
   select(Urban_Pop, Censuses, Population)
 
 
-#Final Graph
+## FIGURE N: RECREATED GRAPHIC
+
 png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "4-Final-UaTP.png"),width=1000,height=400)
 
 ggplot(Urban_Pop_Graph) +
@@ -76,7 +98,7 @@ ggplot(Urban_Pop_Graph) +
 dev.off()
 
 
-#Concealed Graph
+## FIGURE 1: CONCEALED GRAPHIC
 
 png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "1-Concealed-UaTP.png"),width=1000,height=400)
 
@@ -107,7 +129,7 @@ ggplot(Urban_Pop_Graph) +
 dev.off()
 
 
-#Reveal Pop
+## FIGURE 2: REVEAL POPULATION
 
 png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "2-RevealPop-UaTP.png"),width=1000,height=400)
 
@@ -138,7 +160,7 @@ ggplot(Urban_Pop_Graph) +
 dev.off()
 
 
-#Reveal Year
+## FIGURE 3: REVEAL YEAR
 
 png(here::here("Continued Plot Work", "Urban and Total Population at Each Census from 1790 to 1890 - Henry Gannett", "3-RevealYear-UaTP.png"),width=1000,height=400)
 

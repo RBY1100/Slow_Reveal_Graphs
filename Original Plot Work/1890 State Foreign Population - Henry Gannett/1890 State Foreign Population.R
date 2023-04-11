@@ -5,6 +5,29 @@ library(grid)
 library(magick)
 library(srtools)
 
+#
+# FILE:
+# 1890 State Foreign Population.R
+#
+# DESCRIPTION:
+# This code is for the 1890 State Foreign Population Graph from Henry Gannett. The png's show the various stages of revealing the graphs.
+# Source: https://www.loc.gov/resource/g3701gm.gct00010/?sp=29&r=0.357,0.124,0.562,0.357,0
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL STATE LABEL
+# 3: REVEAL TITLE
+# 4: REVEAL UNIT
+# 5: REVEAL NEW YORK
+# 6: REVEAL HIGH POPULATION
+#
+# AUTHORS:
+#   Robert Bilyk
+#
+
+
 #To install the srtools package, you will need to install the package from github:
 #
 #library(devtools)
@@ -20,7 +43,7 @@ data$State <- toupper(data$State)
 data$Foreign <- data$Foreign / 1000
 
 
-#Final Graph
+## N: RECREATED GRAPHIC
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -60,7 +83,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Population - Henry Gannett", "7-Final-State-Foreign-Population-1890.png"), format = "png")
 
 
-#Concealed Graph
+## 1: FULLY CONCEALED GRAPHIC
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -97,7 +120,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Population - Henry Gannett", "1-Concealed-State-Foreign-Population-1890.png"), format = "png")
 
 
-#Reveal State Label
+## 2: REVEAL STATE LABEL
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -138,7 +161,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Population - Henry Gannett", "2-StateReveal-State-Foreign-Population-1890.png"), format = "png")
 
 
-#Reveal Title
+## 3: REVEAL TITLE
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -179,7 +202,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Population - Henry Gannett", "3-TitleReveal-State-Foreign-Population-1890.png"), format = "png")
 
 
-# Reveal Units
+## 4: REVEAL UNITS
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -221,7 +244,7 @@ image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Pop
 
 
 
-# Reveal New York
+## 5: REVEAL NEW YORK
 
 picture <- image_graph(width = 500, height = 800)
 
@@ -263,7 +286,7 @@ dev.off()
 image_write(img, path = here::here("Original Plot Work", "1890 State Foreign Population - Henry Gannett", "5-NYSReveal-State-Foreign-Population-1890.png"), format = "png")
 
 
-# Reveal High Population
+## 6: REVEAL HIGH POPULATION
 
 picture <- image_graph(width = 500, height = 800)
 

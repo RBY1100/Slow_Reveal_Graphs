@@ -1,13 +1,41 @@
 library(magick)
 
 
+#
+# FILE:
+#  Increase in White and Negro Elements.R
+#
+# DESCRIPTION:
+# This code is for the Growth Rate Increase by Element Graph from Dubois. The pngs show the graphs in various stages of slow reveal.  
+# Most graph code was taken from Travis's work: https://github.com/ajstarks/dubois-data-portraits/tree/master/plate40   
+# Source: https://www.loc.gov/resource/ppmsca.33902/
+#
+# SLOW REVEAL ORDER:
+#   
+# N: RECREATED GRAPHIC
+# 1: FULLY CONCEALED GRAPHIC
+# 2: REVEAL YEAR
+# 3: REVEAL UNITS
+# 4: REVEAL TAG
+# 5: REVEAL LABEL
+# 6: REVEAL SMALL LABELS2
+# 7: REVEAL SMALL LABELS1
+# 8: REVEAL TITLE1
+# 9: REVEAL TITLE2
+#
+# AUTHORS:
+#   Travis & Robert Bilyk
+#
+
+## FIGURE N: RECREATED GRAPHIC
+
 original <- image_read(here::here("Continued Plot Work", "Increase of White and Negro Elements", "Original Image.png"))
 
-#Final Graph
 image_write(original, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "10-Final-IncreaseWNE.png"), format = "png")
 
 
-#Concealed Graph
+## 1: FULLY CONCEALED GRAPHIC
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -85,7 +113,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "1-Concealed-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Year
+## 2: REVEAL YEAR
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -159,7 +188,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "2-YearReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Tag
+## 3: REVEAL TAG
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -233,7 +263,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "3-TagReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Units
+## 4: REVEAL UNITS
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -304,7 +335,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "4-UnitReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Label
+# 5: REVEAL LABEL
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -343,7 +375,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "5-LabelReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Small Figures
+# 6: REVEAL SMALL FIGURES1
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -373,7 +406,8 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "6-SmallFigureReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Small Figures
+# 7: REVEAL SMALL FIGURES2
+
 img <- image_draw(original)
 
 #title and subtitle
@@ -395,7 +429,7 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "7-SupressReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Title
+# 8: REVEAL TITLE1
 img <- image_draw(original)
 
 #european
@@ -414,7 +448,7 @@ dev.off()
 image_write(img, path = here::here("Continued Plot Work", "Increase of White and Negro Elements", "8-TitleReveal-IncreaseWNE.png"), format = "png")
 
 
-#Reveal Title
+# 9: REVEAL TITLE2
 img <- image_draw(original)
 
 #emancipation
